@@ -1,0 +1,4 @@
+graph dans un caroussel
+qui sommes nous dans un carroussel
+color.hunt
+chart.js --> trouver best style for graph
