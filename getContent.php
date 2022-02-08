@@ -14,13 +14,10 @@ foreach ($array as $key => $value){
     if(empty($value["protocol"]["type"])){
         $value["protocol"]["type"] = "";
     }
-    if(empty($value["protocol"]["contentType"])){
-        $value["protocol"]["contentType"] = "";
-    }
 
-    $insert = $db->prepare('INSERT INTO frames (date,version,headerLength,service,identification,flagsCode,ttl,protocolName,protocolChecksumStatus,protocolPortsFrom,protocolPortsDest,headerChecksum,ipFrom,ipDest,protocolVersion,protocolContentType,protocolType,protocolCode)
-     VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
-    $insert->execute(array($value["date"],$value["version"],$value["headerLength"],$value["service"],$value["identification"],$value["flags"]["code"],$value["ttl"],$value["protocol"]["name"],$value["protocol"]["checksum"]["status"],$value["protocol"]["ports"]["from"],$value["protocol"]["ports"]["dest"],$value["headerChecksum"],$value["ip"]["from"],$value["ip"]["dest"],$value["protocol"]["version"],$value["protocol"]["contentType"],$value["protocol"]["type"],$value["protocol"]["code"]));
-    var_dump($insert->errorInfo());
+    $insert = $db->prepare('INSERT INTO frames (date,version,headerLength,service,identification,flagsCode,ttl,protocolName,protocolChecksumStatus,protocolPortsFrom,protocolPortsDest,headerChecksum,ipFrom,ipDest,protocolVersion,protocolContentType,protocolType)
+     VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+    $insert->execute(array($value["date"],$value["version"],$value["headerLength"],$value["service"],$value["identification"],$value["flags"]["code"],$value["ttl"],$value["protocol"]["name"],$value["protocol"]["checksum"]["status"],$value["protocol"]["ports"]["from"],$value["protocol"]["ports"]["dest"],$value["headerChecksum"],$value["ip"]["from"],$value["ip"]["dest"],$value["protocol"]["version"],$value["protocol"]["contentType"],$value["protocol"]["type"]));
 };
-// header('location: #?Succes=true');
+
+
