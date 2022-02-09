@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 body {
   background-color: #e4e4e4;
@@ -213,7 +213,6 @@ footer,
   width: 240px;
   height: 60px;
   background-color: #e4e4e4;
-  border-radius: 80px;
   padding: 0 18px;
   will-change: transform;
   transition: all 0.2s ease-in-out;
