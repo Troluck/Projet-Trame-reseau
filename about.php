@@ -77,14 +77,14 @@
             <div class="carrousel1">
 
                 <div class="imgcarrousel">
-                    <img class="img" src="img/Lukas Vuylsteke.png" alt="Luc Boulanger Photo">
+                    <img class="img" src="img/Lukas Vuylsteke.png" alt="Lukas Vuylsteke Photo">
                 </div>
 
                 <div class="textcarrousel">
                     <div class="description">
                         <h2>Lukas <span>Vuylsteke<span></h2>
                         <p>Etudiant en développement web chez NeedForSchool et co-cofondateur de SmartFrames</p>
-                        <p>C'est lui qui analyse de vos données réseaux</p>
+                        <p>C'est lui qui analyse vos données réseaux</p>
                         <h3>lukas.vuylsteke@sframes.fr</h3>
                     </div>
                 </div>
@@ -92,14 +92,14 @@
             <div class="carrousel1">
 
                 <div class="imgcarrousel">
-                    <img class="img" src="img/Theo Lemettais-Petrel.png" alt="Luc Boulanger Photo">
+                    <img class="img" src="img/Theo Lemettais-Petrel.png" alt="Theo Lemettais Photo">
                 </div>
 
                 <div class="textcarrousel">
                     <div class="description">
                         <h2>Theo <span>Lemettais<span></h2>
                         <p>Etudiant en développement web chez NeedForSchool et co-cofondateur de SmartFrames</p>
-                        <p>C'est lui qui s'occupe du design du site</p>
+                        <p>C'est lui qui gère votre compte et sa sécurité</p>
                         <h3>theo.lemettais@sframes.fr</h3>
                     </div>
                 </div>
