@@ -127,7 +127,7 @@ header,
   transform-origin: top;
 }
 
-.grid {
+.grid, .gridDashboard {
   height: fit-content;
   /* border: #111324 solid 1px; */
   display: flex;
@@ -320,3 +320,4 @@ th {
   text-align: center;
   padding: 10px;
 }
+

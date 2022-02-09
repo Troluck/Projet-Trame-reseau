@@ -1,13 +1,13 @@
-<?php 
+<?php
 
-$db= NEW PDO('mysql:host=localhost;dbname=smartframes;charset=utf8','root','root');
+$db = new PDO('mysql:host=localhost;dbname=smartframes;charset=utf8', 'root', 'root');
 $select = "SELECT * FROM frames";
 $req = $db->query($select);
 $trames = $req->fetchAll();
 
 
 // affiche dans la table Dashboard //
-foreach ($trames as $trame){
+foreach ($trames as $trame) {
 
     $ipFrom = (long2ip(hexdec($trame["ipFrom"])));
     $ipDest = (long2ip(hexdec($trame["ipDest"])));

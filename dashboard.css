@@ -1,0 +1,41 @@
+.graphsX2{
+    width: 50%;
+    height: fit-content;
+    border: #111324 2px solid;
+    position: relative;
+    margin: 1%;
+  }
+  
+  #dashTable{
+    overflow: auto;
+    width: 90%;
+    height: 45%;
+    border: #111324 2px solid;
+    position: relative;
+    margin: auto;
+    
+  }
+  .gridDashboard{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 800px;  
+  } 
+  
+  #graphsGrid{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  
+  th{
+    font-style: italic;
+    background-color: #111324;
+    color: white;
+    border-right: #fff 1px solid;
+  }
+  
+  thead{
+    position: sticky;
+    overflow: auto;
+  }

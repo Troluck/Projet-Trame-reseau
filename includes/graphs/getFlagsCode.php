@@ -5,7 +5,7 @@ $db= NEW PDO('mysql:host=localhost;dbname=smartframes;charset=utf8','root','root
 $select = "SELECT COUNT(flagsCode) as number, flagsCode
 FROM frames
 GROUP BY flagsCode";
-$req = $db->query($select);
+$req = $db->query($select); 
 $trames = $req->fetchAll();
 $value = [];
 $i = 0;
@@ -15,5 +15,3 @@ foreach($trames as $trame){
 };
 
 echo json_encode($value);
-
-?>
