@@ -15,14 +15,13 @@
     <main>
         <h1> Qui sommes nous ?</h1>
 
-        <div class="button">
-            <div class="left">←</div>
-            <div class="right">→</div>
+        <div class="navigation">
+
             <ul id="list">
                 <li>
-                    <figure class="buttonactive">
-                        <div class="buttonimgbox">
-                            <div class="buttonimg"></div>
+                    <figure class="button activebutton 1">
+                        <div class="buttonimgbox imgluc">
+                            <div class="buttonimgluc"></div>
                         </div>
                         <figcaption>
                             <h2>Luc</h2>
@@ -32,25 +31,25 @@
                 </li>
 
                 <li>
-                    <figure>
+                    <figure class="button 2">
                         <div class="buttonimgbox">
-                            <div class="buttonimg"></div>
+                            <div class="buttonimglukas"></div>
                         </div>
                         <figcaption>
                             <h2>Lukas</h2>
-                            <p>Developpeur front end</p>
+                            <p>Developpeur back end</p>
                         </figcaption>
                     </figure>
                 </li>
 
                 <li>
-                    <figure>
+                    <figure class="button 3">
                         <div class="buttonimgbox">
-                            <div class="buttonimg"></div>
+                            <div class="buttonimgtheo"></div>
                         </div>
                         <figcaption>
                             <h2>Theo</h2>
-                            <p>Developpeur front end</p>
+                            <p>Developpeur Full Stack</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -63,7 +62,7 @@
             <div class="carrousel1 active">
 
                 <div class="imgcarrousel">
-                    <img class="imgluc" src="img/Luc Boulanger.png" alt="Luc Boulanger Photo">
+                    <img class="img" src="img/Luc Boulanger.png" alt="Luc Boulanger Photo">
                 </div>
 
                 <div class="textcarrousel">
@@ -78,14 +77,14 @@
             <div class="carrousel1">
 
                 <div class="imgcarrousel">
-                    <img class="imgluc" src="img/Lukas Vuylsteke.png" alt="Luc Boulanger Photo">
+                    <img class="img" src="img/Lukas Vuylsteke.png" alt="Luc Boulanger Photo">
                 </div>
 
                 <div class="textcarrousel">
                     <div class="description">
                         <h2>Lukas <span>Vuylsteke<span></h2>
                         <p>Etudiant en développement web chez NeedForSchool et co-cofondateur de SmartFrames</p>
-                        <p>C'est lui de l'analyse de vos données réseaux</p>
+                        <p>C'est lui qui analyse de vos données réseaux</p>
                         <h3>lukas.vuylsteke@sframes.fr</h3>
                     </div>
                 </div>
@@ -93,7 +92,7 @@
             <div class="carrousel1">
 
                 <div class="imgcarrousel">
-                    <img class="imgluc" src="img/Theo Lemettais-Petrel.png" alt="Luc Boulanger Photo">
+                    <img class="img" src="img/Theo Lemettais-Petrel.png" alt="Luc Boulanger Photo">
                 </div>
 
                 <div class="textcarrousel">
