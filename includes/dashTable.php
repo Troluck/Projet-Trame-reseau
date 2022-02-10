@@ -8,9 +8,8 @@ $trames = $req->fetchAll();
 
 // affiche dans la table Dashboard //
 foreach ($trames as $trame) {
-
-    $ipFrom = (long2ip(hexdec($trame["ipFrom"])));
-    $ipDest = (long2ip(hexdec($trame["ipDest"])));
+    $ipFrom = (long2ip((int)hexdec($trame["ipFrom"])));
+    $ipDest = (long2ip((int)hexdec($trame["ipDest"])));
 
     echo "<tr>";
     echo "<td>" . date('d/m/y', $trame["date"]) . "</td>";
