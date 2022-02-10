@@ -1,41 +1,54 @@
 console.log("test");
 
 const items =document.querySelectorAll(".carrousel1");
-const nbSlide= items.length;
-const right =document.querySelector('.right');
-const left =document.querySelector('.left');
-console.log(nbSlide);
-let count=0;
+const buttons=document.querySelectorAll('.button');
 
 
-function SlideSuivante(){
-    items[count].classList.remove('active');
 
-    if (count <nbSlide-1){
-        count++;
-    }else{
-        count=0;
+buttons.forEach(button => {
+ 
+button.addEventListener('click',Slide);
+
+ function Slide(){
+    const buttonclass= button.className;
+
+    if (buttonclass=="button 1"){
+       console.log(items[1]);
+       items[1].classList.remove('active');
+       items[2].classList.remove('active');
+       items[0].classList.add('active');
+       
+       buttons[1].classList.remove('activebutton');
+       buttons[2].classList.remove('activebutton');
+       buttons[0].classList.add('activebutton');
     }
 
-    items[count].classList.add('active');
-    console.log(count);
+    if (buttonclass=="button 2"){
+        console.log(items[1]);
+        items[0].classList.remove('active');
+        items[2].classList.remove('active');
+        items[1].classList.add('active');
+
+        buttons[0].classList.remove('activebutton');
+        buttons[2].classList.remove('activebutton');
+        buttons[1].classList.add('activebutton');
+     }
+
+     if (buttonclass=="button 3"){
+        console.log(items[1]);
+        items[0].classList.remove('active');
+        items[1].classList.remove('active');
+        items[2].classList.add('active');
+
+        buttons[0].classList.remove('activebutton');
+        buttons[1].classList.remove('activebutton');
+        buttons[2].classList.add('activebutton');
+     }
+
+
 }
+});
 
-function SlidePrecedente(){
-    items[count].classList.remove('active');
-
-    if (count >0){
-        count--;
-    }else{
-        count=nbSlide-1;
-    }
-
-    items[count].classList.add('active');
-    console.log(count);
-}
-
-right.addEventListener('click',SlideSuivante);
-left.addEventListener('click',SlidePrecedente);
 
 
 

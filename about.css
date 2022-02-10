@@ -1,6 +1,8 @@
 h1 {
   font-size: 60px;
   color: #44475d;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 main {
@@ -28,7 +30,7 @@ main {
   width: 40%;
 }
 
-.imgluc {
+.img {
   height: 100%;
 }
 .textcarrousel {
@@ -72,8 +74,13 @@ h3 {
 
 .active {
   position: relative;
-  left: -100px;
   display: flex;
+}
+
+.imgcarrousel {
+  position: relative;
+  display: flex;
+  left: -100px;
   animation: slideleft 0.8s forwards;
 }
 @keyframes slideleft {
@@ -82,8 +89,21 @@ h3 {
   }
 }
 
+.description {
+  position: relative;
+  display: flex;
+  right: -100px;
+  animation: slideright 0.8s forwards;
+}
+@keyframes slideright {
+  100% {
+    right: 0;
+  }
+}
+
 li {
   list-style-type: none;
+  margin-right: 50px;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -97,26 +117,71 @@ li {
 
 figure {
   cursor: pointer;
-  margin: 1em;
+  margin: 0;
   opacity: 0.5;
   backface-visibility: hidden;
   transition: transform 450ms;
 }
 
+figcaption {
+  margin-top: 5px;
+}
+
+figcaption h2 {
+  margin: 0;
+}
+
+figcaption p {
+  color: #707070;
+  font-size: 14px;
+  margin: 0;
+}
+
 .buttonimgbox {
   border-radius: 45px;
   position: relative;
-  margin: 2rem auto;
+  margin: auto;
   width: 80px;
   height: 80px;
   overflow: hidden;
 }
 
-.buttonimg {
+.buttonimgluc {
   background: url(img/LucBoulangerButton.png) no-repeat;
   background-size: cover;
   background-position: -5px -13px;
   position: absolute;
   width: 90px;
   height: 90px;
+}
+.buttonimglukas {
+  background: url(img/LukasVuylstekeButton.png) no-repeat;
+  background-size: cover;
+  background-position: 0px -13px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+.buttonimgtheo {
+  background: url(img/TheoLemmetaisButton.png) no-repeat;
+  background-size: cover;
+  background-position: 0px -20px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.activebutton {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.buttonimgbox:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.buttonimgbox:not(:hover) {
+  transform: scale(1);
+  transition-duration: 0.2s;
 }
