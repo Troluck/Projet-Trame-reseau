@@ -12,9 +12,8 @@
 
 <body>
     <?php include("includes/header.php") ?>
+    <h1> Qui sommes nous ?</h1>
     <main>
-        <h1> Qui sommes nous ?</h1>
-
         <div class="navigation">
 
             <ul id="list">
