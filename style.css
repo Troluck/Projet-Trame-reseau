@@ -18,6 +18,7 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
+  height: 100px;
 }
 
 .header-left,
@@ -43,15 +44,16 @@ header,
 }
 
 .header-left span {
-  font-size: 25px;
+  font-size: 30px;
   padding-bottom: 8px;
 }
 
 #logo-img {
-  height: 80px;
+  height: 100px;
 }
 
 .header-right a {
+  font-size: 25px;
   text-decoration: none;
   padding: 5px;
 }
@@ -127,7 +129,8 @@ header,
   transform-origin: top;
 }
 
-.grid, .gridDashboard {
+.grid,
+.gridDashboard {
   height: fit-content;
   /* border: #111324 solid 1px; */
   display: flex;
@@ -321,6 +324,6 @@ th {
   padding: 10px;
 }
 
-.lienLogo{
+.lienLogo {
   text-decoration: none;
 }
