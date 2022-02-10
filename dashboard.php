@@ -157,8 +157,12 @@
                     y: {
                         beginAtZero: true
                     }
+
                 }
+
             }
+
+
         });
     })
 </script>
