@@ -7,11 +7,7 @@ $(document).ready(function () {
             keys.push(key);
             values.push(val);
         });
-        // console.log(keys);
-        // console.log('------------------')
-        // console.log(values);
-        // console.log('------------------')
-        // console.log(keys);
+
 
         const ctx2 = document.getElementById('myChart2');
 

@@ -3,14 +3,13 @@ $(document).ready(function () {
     let values = [];
     $.getJSON("includes/graphs/getProtocolName.php", function (data) {
 
+
+        
         $.each(data, function (key, val) {
             keys.push(key);
             values.push(val);
         });
-        // console.log(keys);
-        // console.log('------------------')
-        // console.log(values);
-        // console.log('------------------')
+
 
 
         const ctx3 = document.getElementById('myChart');

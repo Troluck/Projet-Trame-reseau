@@ -21,7 +21,12 @@
                 <div class="graphsX2">
                     <canvas id="myChart"></canvas>
                     <!-- <script src="includes/graphs/graph.js"></script> -->
-                    <script src="includes/graphs/graphProtocolName.js"></script>
+                    <!-- <script src="includes/graphs/graphProtocolName.js"></script> -->
+                    <!-- <script src="includes/graphs/graphProtocolFrom.js"></script> -->
+                    <!-- <script src="includes/graphs/graphProtocolDest.js"></script> -->
+                    <!-- <script src="includes/graphs/graphChecksumStatus.js"></script> -->
+                    <!-- <script src="includes/graphs/graphHeaderChecksum.js"></script> -->
+                    <script src="includes/graphs/graphIpDest.js"></script>
                 </div>
                 <div class="graphsX2">
                     <canvas id="myChart2"></canvas>
