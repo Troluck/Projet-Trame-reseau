@@ -3,6 +3,7 @@ h1 {
   color: #44475d;
   margin-top: 15px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 main {
@@ -184,4 +185,130 @@ figcaption p {
 .buttonimgbox:not(:hover) {
   transform: scale(1);
   transition-duration: 0.2s;
+}
+
+@media (max-width: 1400px) {
+  .textcarrousel h2 {
+    text-align: center;
+  }
+
+  .imgcarrousel {
+    align-items: flex-end;
+  }
+  .img {
+    height: 90%;
+  }
+  .textcarrousel {
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+  .textcarrousel {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+  .textcarrousel {
+    justify-content: flex-end;
+    margin-top: 10%;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 47px;
+  }
+  main {
+    flex-direction: row;
+  }
+  .navigation {
+    width: 30%;
+  }
+  .container {
+    width: 65%;
+  }
+  .carrousel1 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .img {
+    height: 100%;
+  }
+  .imgcarrousel {
+    justify-content: center;
+    align-self: center;
+    height: 50%;
+  }
+  .textcarrousel {
+    margin-top: 2%;
+    display: block;
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 20%;
+  }
+  .textcarrousel h2 {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+  .navigation {
+    width: 100%;
+  }
+  figure {
+    width: 50px;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .navigation {
+    display: flex;
+  }
+  .container {
+    width: 90%;
+  }
+  figcaption p {
+    display: flex;
+  }
+  figcaption h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 35px;
+  }
+  figure {
+    width: 100%;
+  }
+  li {
+    margin-right: 0;
+  }
 }
