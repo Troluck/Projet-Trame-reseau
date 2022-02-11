@@ -1,23 +1,4 @@
-<?php
-$pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
-session_start();
-
-
-if (!empty($_POST["email"]) && !empty($_POST["password"])) {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-
-    $requestUtilisateur = $pdo->prepare("SELECT * FROM users WHERE email = '$email' AND password ='$password'");
-    $requestUtilisateur->execute();
-    $users = $requestUtilisateur->fetch();
-
-    if (!empty($users)) {
-        echo "ça marche";
-    }
-}
-?>
-
+<? include("modal/Connexion.php") ?>
 
 
 <div id="modalConnexion" class="modal">
@@ -28,12 +9,12 @@ if (!empty($_POST["email"]) && !empty($_POST["password"])) {
 
             <div class="input">
                 <label for="mail">E-Mail: </label><br>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="email" name="email">
             </div>
 
             <div class="input">
                 <label for="password">Mot de passe : </label><br>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password">
             </div>
 
 
@@ -42,5 +23,6 @@ if (!empty($_POST["email"]) && !empty($_POST["password"])) {
             </div>
 
         </form>
+
     </div>
 </div>

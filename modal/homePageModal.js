@@ -1,33 +1,40 @@
-const inscription =document.querySelector("#inscription");
-const connexion =document.querySelector("#connexion");
-const modalConnexion =document.querySelector("#modalConnexion");
-const modalInscription=document.querySelector("#modalInscription");
-const closes=document.querySelectorAll(".close");
+const inscription = document.querySelector("#inscription");
+const connexion = document.querySelector("#connexion");
+const modalConnexion = document.querySelector("#modalConnexion");
+const modalInscription = document.querySelector("#modalInscription");
+const button_connexion = document.querySelector("#submit-connexion");
+const closes = document.querySelectorAll(".close");
 
-inscription.addEventListener('click',OpenModalInscription);
-connexion.addEventListener('click',OpenModalConnexion);
+inscription.addEventListener('click', OpenModalInscription);
+connexion.addEventListener('click', OpenModalConnexion);
 
 
 
-function OpenModalInscription(){
+
+
+
+
+
+
+function OpenModalInscription() {
     console.log("test");
     modalInscription.style.display = "flex";
 
 }
 
 
-function OpenModalConnexion(){
+function OpenModalConnexion() {
     console.log("test");
     modalConnexion.style.display = "flex";
 }
 
 
 closes.forEach(close => {
-close.addEventListener('click',closeModal);
+    close.addEventListener('click', closeModal);
 
-function closeModal(){
-    modalInscription.style.display = "none";
-    modalConnexion.style.display = "none";
-}
+    function closeModal() {
+        modalInscription.style.display = "none";
+        modalConnexion.style.display = "none";
+    }
 
 })

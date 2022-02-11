@@ -31,6 +31,7 @@
 
 
         <script src="modal/homePageModal.js"></script>
+       
     </main>
     <?php include("includes/footer.php") ?>
 
