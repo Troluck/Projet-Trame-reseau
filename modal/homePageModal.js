@@ -5,12 +5,9 @@ const modalInscription = document.querySelector("#modalInscription");
 const button_connexion = document.querySelector("#submit-connexion");
 const closes = document.querySelectorAll(".close");
 
+
 inscription.addEventListener('click', OpenModalInscription);
 connexion.addEventListener('click', OpenModalConnexion);
-
-
-
-
 
 
 
@@ -19,6 +16,10 @@ connexion.addEventListener('click', OpenModalConnexion);
 function OpenModalInscription() {
     console.log("test");
     modalInscription.style.display = "flex";
+
+
+
+
 
 }
 
