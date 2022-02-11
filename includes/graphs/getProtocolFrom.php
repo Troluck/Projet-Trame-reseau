@@ -2,16 +2,16 @@
 header('Content-Type: application/json; charset=utf-8');
 
 $db = new PDO('mysql:host=localhost;dbname=smartframes;charset=utf8', 'root', 'root');
-$select = "SELECT COUNT(flagsCode) as number, flagsCode
+$select = "SELECT COUNT(protocolFrom) as number, protocolFrom
 FROM frames
-GROUP BY flagsCode";
+GROUP BY protocolFrom";
 $req = $db->query($select);
 $trames = $req->fetchAll();
 $value = [];
 $i = 0;
 
 foreach ($trames as $trame) {
-    $value[$trame["flagsCode"]] = $trame["number"];
+    $value[$trame["protocolFrom"]] = $trame["number"];
 };
 
 echo json_encode($value);
