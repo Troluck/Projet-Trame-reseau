@@ -22,7 +22,7 @@ if (!empty($_POST)) {
             $requestinscription = $pdo->prepare("INSERT INTO `users`( `email`,`name`, `ip`,  `password`,)
                                         VALUES ('" . $_POST["email"] . "',
                                         '" . $_POST["name"] . "',
-                                        '" . $_POST["ip"] . "',
+                                        '" . $_POST["tel"] . "',
                                         '" . $_POST["password"] . "',
                                         '" . 0 . "',
                                         '" . NULL . "')");
@@ -53,7 +53,7 @@ function verifEmail($email)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>smart frames</title>
+    <title>smart frame</title>
     <html>
 
     <body>
@@ -73,8 +73,8 @@ function verifEmail($email)
 
                     <label for="name">nom:</label>
 
-                    <input type="text" id="firstname" name="firstname">
-                    <label for="firstname">prénom</label>
+                    <input type="text" id="name" name="name">
+                    <label for="name">prénom</label>
 
                     <input type="text" id="name" name="name">
                     <label for="phone">entrez votre numéro de téléphone</label>
@@ -85,10 +85,6 @@ function verifEmail($email)
                         <label for="pass">mot de passe:</label>
                         <input type="password" id="pass" name="password" minlength="8" required>
                     </div>
-                    <label for="email">entrez votre email:</label>
-
-<input type="email" id="email"
-       pattern=".+@globex\.com" size="30" required>
 
                     <div class="modal-body">
                         <form>

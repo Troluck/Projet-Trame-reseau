@@ -1,5 +1,5 @@
 <?php
-include("inc/pdo.php");
+include("include/pdo.php");
 if (isset($_SESSION['username'])) {
   $username = ($_SESSION['username']);
 }
@@ -31,7 +31,7 @@ if (isset($_SESSION['prenom'])) {
   
 
     <header>
-      <?php include("inc/header.php");
+      <?php inc("include/header.php");
       ?>
     </header>
     <main>
@@ -41,7 +41,7 @@ if (isset($_SESSION['prenom'])) {
     </div>
 
     <footer>
-      <?php include("inc/footer.php"); ?>
+      <?php include("include/footer.php"); ?>
     </footer>
 
   </div>
