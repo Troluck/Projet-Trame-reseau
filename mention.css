@@ -1,3 +1,43 @@
-    p {
-        padding: 10px 50px 20px;
-    }
+p {
+    margin: 10px 125px 20px;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    line-height: 140%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: helvetica, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    color: #707070;
+}
+
+li {
+    text-align: center;
+    margin: 10px 600px 20px;
+}
+
+.mention {
+    line-height: 2em;
+}
+
+.ruban {
+    text-align: center;
+    background-color: #8f9be0;
+    padding: 10px 50px 20px;
+    border-radius: 30px;
+    opacity: 0.5;
+}
