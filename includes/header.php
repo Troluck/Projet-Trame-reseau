@@ -1,11 +1,8 @@
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
 session_start();
-$id = $_SESSION['id'];
-$reqprofil = $pdo->prepare("SELECT * FROM users WHERE `id` = '$id'"); //Préparer
-$reqprofil->execute(); //Executer 
-$affprofil = $reqprofil->fetchAll();
-echo $affprofil[0]["name"] ?>
+
+?>
 
 <header>
     <div class="header-left">
@@ -16,11 +13,29 @@ echo $affprofil[0]["name"] ?>
 
     </div>
     <div class="header-right">
+
+        <?php if (!empty($_SESSION['id'])) {
+
+            $pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
+            $id = $_SESSION['id'];
+            $reqprofil = $pdo->prepare("SELECT * FROM users WHERE `id` = '$id'"); //Préparer
+            $reqprofil->execute(); //Executer 
+            $affprofil = $reqprofil->fetchAll();
+            date_default_timezone_set('Europe/Paris');
+            $date = date('H');
+            if ($date < 18 && $date > 6) {
+                echo '<p class=afficheName> Bonjour ' . $affprofil[0]["name"] . '</p>';
+            } else {
+                echo '<p class=afficheName> Bonsoir ' . $affprofil[0]["name"] . '</p>';
+            }
+        }
+        ?>
         <a href="about.php"> Qui sommes nous ?
             <span></span>
             <span></span>
             <span></span>
             <span></span>
+
         </a>
     </div>
     <script src="includes/header.js"></script>

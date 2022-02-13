@@ -1,8 +1,7 @@
 <?php
-if (isset($_POST["Id2"])) {
-    $pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
-    session_start();
 
+
+if (isset($_POST["Id2"])) {
 
     if (!empty($_POST["email-connect"]) && !empty($_POST["password-connect"])) {
         $email = $_POST["email-connect"];
@@ -20,8 +19,8 @@ if (isset($_POST["Id2"])) {
             $_SESSION["id"] = $users["id"];
             header('location:dashboard.php');
         } else {
+
             $erreur = true;
-            echo ("ça marche pas");
         }
     }
 }
