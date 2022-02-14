@@ -1,21 +1,21 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getProtocolTrail.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getFlagsCode.php", function (data) {
 
-        $.each(data[0], function (key, val) {
+        $.each(data, function (key, val) {
             keys.push(key);
             values.push(val);
         });
 
-        const ctx = document.getElementById('myChart');
+        const ctx = document.getElementById('myChart2');
 
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Protocol Ports From',
+                    label: 'Flags Code Usage',
                     data: values,
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.5)',
@@ -32,3 +32,4 @@ $(document).ready(function () {
         })
     })
 })
+

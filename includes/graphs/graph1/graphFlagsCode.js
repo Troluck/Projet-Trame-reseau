@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getFlagsCode.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getFlagsCode.php", function (data) {
 
         $.each(data, function (key, val) {
             keys.push(key);

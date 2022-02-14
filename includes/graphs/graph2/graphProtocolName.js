@@ -1,34 +1,43 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getChecksumStatus.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getProtocolName.php", function (data) {
+
+
 
         $.each(data, function (key, val) {
             keys.push(key);
             values.push(val);
         });
 
-        const ctx = document.getElementById('myChart');
 
-        const myChart = new Chart(ctx, {
-            type: 'bar',
+
+        const ctx3 = document.getElementById('myChart2');
+
+        const myChart3 = new Chart(ctx3, {
+            type: 'pie',
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Protocol Checksum Status',
+                    label: 'Protocol Name Usage',
                     data: values,
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.5)',
-                        'rgba(255, 0, 0, 0.5)'
+                        'rgba(255, 0, 0, 0.5)',
+                        'rgba(0, 255, 0, 0.5)'
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(255, 0, 0, 1)'
+                        'rgba(0, 0, 255, 1)',
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(0, 255, 0, 1)'
                     ],
                     borderWidth: 1
                 }]
             },
-            options: {}
+            options: {
+
+            }
         })
     })
 })
+

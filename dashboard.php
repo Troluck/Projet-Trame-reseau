@@ -20,7 +20,7 @@
             <div id="graphsGrid">
                 <div class="graphsX2">
                     <canvas id="myChart"></canvas>
-                    <script src="includes/graphs/graphFlagsCode.js"></script>
+                    <script src="includes/graphs/graph1/ "></script>
                     <!-- <script src="includes/graphs/graphProtocolName.js"></script> -->
                     <!-- <script src="includes/graphs/graphProtocolFrom.js"></script> -->
                     <!-- <script src="includes/graphs/graphProtocolDest.js"></script> -->
@@ -30,29 +30,31 @@
                 </div>
                 <div class="graphsX2">
                     <canvas id="myChart2"></canvas>
-                    <script src="includes/graphs/graphTTL.js"></script>
+                    <script src="includes/graphs/graph2/graphTTL.js"></script>
                 </div>
             </div>
             <div id="selectorBox">
-                <select>
-                    <option value="protocolName"></option>
-                    <option value="protocolFrom"></option>
-                    <option value="protocolDest"></option>
-                    <option value="flagsCode"></option>
-                    <option value="checksumStatus"></option>
-                    <option value="headerChecksum"></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <select id="graph1selector">
+                    <option value="based">- Graph I -</option>
+                    <option value="protocolName">Nom des protocoles utilisés :</option>
+                    <option value="protocolFrom">Protocoles en provenance de :</option>
+                    <option value="protocolDest">Protocoles à destination de :</option>
+                    <option value="flagsCode">Code de drapeau utilisés :</option>
+                    <option value="checksumStatus">Status des protocole checksum :</option>
+                    <option value="headerChecksum">Header checksum</option>
+                    <option value="ipFrom">IP en provenance de :</option>
+                    <option value="ipDest">IP à destination de :</option>
                 </select>
-                <select>
-                    <option value="protocolName"></option>
-                    <option value="protocolFrom"></option>
-                    <option value="protocolDest"></option>
-                    <option value="flagsCode"></option>
-                    <option value="checksumStatus"></option>
-                    <option value="headerChecksum"></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <select id="graph2selector">
+                    <option value="based">- Graph II -</option>
+                    <option value="protocolName">Nom des protocoles utilisés :</option>
+                    <option value="protocolFrom">Protocoles en provenance de :</option>
+                    <option value="protocolDest">Protocoles à destination de :</option>
+                    <option value="flagsCode">Code de drapeau utilisés :</option>
+                    <option value="checksumStatus">Status des protocole checksum :</option>
+                    <option value="headerChecksum">Header checksum</option>
+                    <option value="ipFrom">IP en provenance de :</option>
+                    <option value="ipDest">IP à destination de :</option>
                 </select>
             </div>
             <div id="dashTable">

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getIpTrail.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getProtocolTrail.php", function (data) {
 
         $.each(data[0], function (key, val) {
             keys.push(key);
@@ -15,7 +15,7 @@ $(document).ready(function () {
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'IP From',
+                    label: 'Protocol Ports From',
                     data: values,
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.5)',

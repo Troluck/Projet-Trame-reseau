@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getProtocolTrail.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getProtocolTrail.php", function (data) {
 
         $.each(data[1], function (key, val) {
             keys.push(key);

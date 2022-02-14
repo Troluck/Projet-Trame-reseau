@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getHeaderChecksum.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getHeaderChecksum.php", function (data) {
 
         $.each(data, function (key, val) {
             keys.push(key);
