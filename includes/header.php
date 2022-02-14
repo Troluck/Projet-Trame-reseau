@@ -7,7 +7,7 @@ session_start();
 <header>
     <div class="header-left">
         <a href="homePage.php" class=lienLogo>
-            <img src="img/logo sf.png" id="logo-img" alt="logo Smart Frames">
+            <img src="img/logosf.png" id="logo-img" alt="logo Smart Frames">
         </a>
         <span class="lienLogo">Smart Frames</span>
 
