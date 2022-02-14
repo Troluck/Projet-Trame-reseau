@@ -42,3 +42,7 @@
     position: sticky;
     overflow: auto;
   }
+
+  #selectorBox{
+    width: 100%;
+  }

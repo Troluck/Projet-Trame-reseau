@@ -1,21 +1,22 @@
 $(document).ready(function () {
     let keys = [];
     let values = [];
-    $.getJSON("includes/graphs/getIpTrail.php", function (data) {
+    $.getJSON("includes/graphs/getGraphData/getTTL.php", function (data) {
 
-        $.each(data[1], function (key, val) {
+        $.each(data, function (key, val) {
             keys.push(key);
             values.push(val);
         });
 
-        const ctx = document.getElementById('myChart');
 
-        const myChart = new Chart(ctx, {
+        const ctx2 = document.getElementById('myChart');
+
+        const myChart2 = new Chart(ctx2, {
             type: 'bar',
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Protocol Ports Destination',
+                    label: 'TTL perdus',
                     data: values,
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.5)',
@@ -28,7 +29,14 @@ $(document).ready(function () {
                     borderWidth: 1
                 }]
             },
-            options: {}
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
         })
     })
 })
+

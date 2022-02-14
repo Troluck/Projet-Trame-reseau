@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <title>Smart Frames | Dashboard</title>
 </head>
@@ -19,18 +20,42 @@
             <div id="graphsGrid">
                 <div class="graphsX2">
                     <canvas id="myChart"></canvas>
-                    <!-- <script src="includes/graphs/graph.js"></script> -->
+                    <script src="includes/graphs/graph1/ "></script>
                     <!-- <script src="includes/graphs/graphProtocolName.js"></script> -->
                     <!-- <script src="includes/graphs/graphProtocolFrom.js"></script> -->
                     <!-- <script src="includes/graphs/graphProtocolDest.js"></script> -->
                     <!-- <script src="includes/graphs/graphChecksumStatus.js"></script> -->
                     <!-- <script src="includes/graphs/graphHeaderChecksum.js"></script> -->
-                    <script src="includes/graphs/graphIpDest.js"></script>
+                    <!-- <script src="includes/graphs/graphIpDest.js"></script> -->
                 </div>
                 <div class="graphsX2">
                     <canvas id="myChart2"></canvas>
-                    <script src="includes/graphs/graphTTL.js"></script>
+                    <script src="includes/graphs/graph2/graphTTL.js"></script>
                 </div>
+            </div>
+            <div id="selectorBox">
+                <select id="graph1selector">
+                    <option value="based">- Graph I -</option>
+                    <option value="protocolName">Nom des protocoles utilisés :</option>
+                    <option value="protocolFrom">Protocoles en provenance de :</option>
+                    <option value="protocolDest">Protocoles à destination de :</option>
+                    <option value="flagsCode">Code de drapeau utilisés :</option>
+                    <option value="checksumStatus">Status des protocole checksum :</option>
+                    <option value="headerChecksum">Header checksum</option>
+                    <option value="ipFrom">IP en provenance de :</option>
+                    <option value="ipDest">IP à destination de :</option>
+                </select>
+                <select id="graph2selector">
+                    <option value="based">- Graph II -</option>
+                    <option value="protocolName">Nom des protocoles utilisés :</option>
+                    <option value="protocolFrom">Protocoles en provenance de :</option>
+                    <option value="protocolDest">Protocoles à destination de :</option>
+                    <option value="flagsCode">Code de drapeau utilisés :</option>
+                    <option value="checksumStatus">Status des protocole checksum :</option>
+                    <option value="headerChecksum">Header checksum</option>
+                    <option value="ipFrom">IP en provenance de :</option>
+                    <option value="ipDest">IP à destination de :</option>
+                </select>
             </div>
             <div id="dashTable">
                 <table>
