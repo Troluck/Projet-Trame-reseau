@@ -10,11 +10,13 @@ $(document).ready(function () {
                 data: [30, 20, 50],
                 backgroundColor: [
                     'rgba(0, 0, 255, 0.5)',
-                    'rgba(255, 0, 0, 0.5)'
+                    'rgba(255, 0, 0, 0.5)',
+                    'rgba(0, 255, 0, 0.5)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 0, 0, 1)'
+                    'rgba(0, 0, 255, 1)',
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(0, 255, 0, 1)'
                 ],
                 borderWidth: 1
             }]

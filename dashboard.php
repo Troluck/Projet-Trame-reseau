@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <title>Smart Frames | Dashboard</title>
 </head>
+<script>
+    $(document).ready(function() {
+        $('#table_id').DataTable({
+            "scrollY": 200,
+            "scrollX": true,
+        });
+    });
+</script>
 
 <body>
     <?php include("includes/header.php") ?>
+
     <?php if (isset($_POST['graph1selector'])) {
         // var_dump($_POST);
         $choice1 = $_POST['graph1selector'];
@@ -34,15 +45,16 @@
             $graph = 'graphIpFrom.js';
         } elseif ($choice1 == "ipDest") {
             $graph = 'graphIpDest.js';
-        } else {
+        } elseif ($choice1 == "based") {
             $graph = 'graphVide.js';
         }
     } else {
         $graph = 'graphVide.js';
     }
     ?>
+
     <?php if (isset($_POST['graph2selector'])) {
-        var_dump($_POST);
+        // var_dump($_POST);
         $choice2 = $_POST['graph2selector'];
         if ($choice2 == "protocolName") {
             $graph2 = 'graphProtocolName.js';
@@ -60,7 +72,7 @@
             $graph2 = 'graphIpFrom.js';
         } elseif ($choice2 == "ipDest") {
             $graph2 = 'graphIpDest.js';
-        } else {
+        } elseif ($choice2 == "based") {
             $graph2 = 'graphVide.js';
         }
     } else {
@@ -92,9 +104,6 @@
                         <option value="ipFrom">IP en provenance de :</option>
                         <option value="ipDest">IP à destination de :</option>
                     </select>
-                    <input type="submit" value="Changer graphique 1">
-                </form>
-                <form action="" method="post">
                     <select name="graph2selector">
                         <option value="based">- Graph II -</option>
                         <option value="protocolName">Nom des protocoles utilisés :</option>
@@ -106,11 +115,11 @@
                         <option value="ipFrom">IP en provenance de :</option>
                         <option value="ipDest">IP à destination de :</option>
                     </select>
-                    <input type="submit" value="Changer graphique 2">
+                    <input type="submit" value="Changer les graphiques">
                 </form>
             </div>
             <div id="dashTable">
-                <table>
+                <table id="table_id" class="display nowrap" style="width: 80%;">
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -135,12 +144,34 @@
                     <tbody>
                         <?php include("includes/dashTable.php") ?>
                     </tbody>
-
+                    <tfoot>
+                        <tr>
+                            <th>Date</th>
+                            <th>Version</th>
+                            <th>Header Length</th>
+                            <th>Service</th>
+                            <th>Identification</th>
+                            <th>Flags Code</th>
+                            <th>TTL</th>
+                            <th>Protocol Name</th>
+                            <th>Protocol Checksum Status</th>
+                            <th>Protocol Ports From</th>
+                            <th>Protocol Ports Destination</th>
+                            <th>Header Checksum</th>
+                            <th>IP From</th>
+                            <th>IP Destination</th>
+                            <th>Protocol Version</th>
+                            <th>Protocol Content Type</th>
+                            <th>Protocol Type</th>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>
+
     </main>
     <?php include("includes/footer.php") ?>
 </body>
+
 
 </html>

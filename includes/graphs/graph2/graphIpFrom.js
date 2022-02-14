@@ -4,6 +4,7 @@ $(document).ready(function () {
     $.getJSON("includes/graphs/getGraphData/getIpTrail.php", function (data) {
 
         $.each(data[0], function (key, val) {
+            console.log(key);
             keys.push(key);
             values.push(val);
         });
@@ -19,11 +20,13 @@ $(document).ready(function () {
                     data: values,
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.5)',
-                        'rgba(255, 0, 0, 0.5)'
+                        'rgba(255, 0, 0, 0.5)',
+                        'rgba(0, 255, 0, 0.5)'
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(255, 0, 0, 1)'
+                        'rgba(0, 0, 255, 1)',
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(0, 255, 0, 1)'
                     ],
                     borderWidth: 1
                 }]
@@ -32,3 +35,4 @@ $(document).ready(function () {
         })
     })
 })
+

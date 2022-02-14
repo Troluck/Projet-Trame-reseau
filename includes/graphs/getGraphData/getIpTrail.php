@@ -20,11 +20,11 @@ $valueF = [];
 $valueD = [];
 $value = [];
 foreach ($tramesF as $trame) {
-    $valueF[$trame["ipFrom"]] = $trame["number"];
+    $valueF[long2ip((int)hexdec($trame["ipFrom"]))] = $trame["number"];
 };
 
 foreach ($tramesD as $trame) {
-    $valueD[$trame["ipDest"]] = $trame["number"];
+    $valueD[long2ip((int)hexdec($trame["ipDest"]))]  = $trame["number"];
 };
 
 $value = [$valueF, $valueD];
