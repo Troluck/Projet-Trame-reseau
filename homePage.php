@@ -15,12 +15,14 @@
     <?php
     session_start();
     session_destroy(); ?>
-    <?php include("includes/header.php") ?>
     <?php include("modal/ModalConnexion.php") ?>
     <?php include("modal/ModalInscription.php") ?>
     <?php include("modal/ModalErreur.php") ?>
+    <?php include("includes/header.php") ?>
+
 
     <main>
+
         <div class="text">
             <h2>Bienvenue sur<br>Smart Frames</h2>
             <h3>Le site qui permet de décoder votre réseau d'entreprise</h3>

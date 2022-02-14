@@ -1,4 +1,5 @@
 <?php
+$pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
 
 
 if (isset($_POST["Id2"])) {
@@ -14,6 +15,7 @@ if (isset($_POST["Id2"])) {
 
 
         if ((!empty($users)) && (password_verify($password, $users["password"]))) {
+            session_start();
             $erreur = false;
             echo ("ça marche");
             $_SESSION["id"] = $users["id"];
