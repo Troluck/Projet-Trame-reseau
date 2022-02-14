@@ -21,8 +21,14 @@ if (isset($_POST["Id2"])) {
             $_SESSION["id"] = $users["id"];
             header('location:dashboard.php');
         } else {
-
-            $erreur = true;
+?>
+            <script>
+                const modalErreur = document.querySelector("#modalErreur");
+                const textErreur = document.querySelector("#erreur-text");
+                modalErreur.style.display = "flex";
+                textErreur.innerHTML = "<p>Mail ou mot de passe incorrect</p>"
+            </script>
+<?php
         }
     }
 }

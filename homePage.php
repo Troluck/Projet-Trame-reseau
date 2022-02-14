@@ -15,9 +15,9 @@
     <?php
     session_start();
     session_destroy(); ?>
+    <?php include("modal/ModalErreur.php") ?>
     <?php include("modal/ModalConnexion.php") ?>
     <?php include("modal/ModalInscription.php") ?>
-    <?php include("modal/ModalErreur.php") ?>
     <?php include("includes/header.php") ?>
 
 

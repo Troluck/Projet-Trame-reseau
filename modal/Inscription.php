@@ -11,20 +11,33 @@ if (isset($_POST["Id1"])) {
         $passwordverif = $_POST['password-verif'];
         $passwordhash = password_hash($password, PASSWORD_DEFAULT);
         if ($password != $passwordverif) {
-            echo ("Les mots de passes sont différents");
+?>
+            <script>
+                const modalErreur = document.querySelector("#modalErreur");
+                const textErreur = document.querySelector("#erreur-text");
+                modalErreur.style.display = "flex";
+                textErreur.innerHTML = "<p>Mots de passe différents</p>"
+            </script>
+            <?php
         } else {
             $requestUtilisateur = $pdo->prepare("SELECT * FROM users WHERE email = '$email'");
             $requestUtilisateur->execute();
             $users = $requestUtilisateur->fetch();
 
             if ($users) {
-                echo ("mail deja utilisé");
+            ?>
+                <script>
+                    const modalErreur = document.querySelector("#modalErreur");
+                    const textErreur = document.querySelector("#erreur-text");
+                    modalErreur.style.display = "flex";
+                    textErreur.innerHTML = "<p>Mail déja utilisé</p>"
+                </script>
+
+<?php
             } else {
 
                 $req = $pdo->prepare("INSERT INTO users (name, email,tel,password) VALUES ('$nom', '$email', '$phone', '$passwordhash')");
                 $req->execute();
-
-                echo ("mot de passe valide");
             }
         }
     }

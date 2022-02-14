@@ -16,9 +16,26 @@
                 <label for="phone">Téléphone : </label><br>
                 <input type="tel" id="phone" name="phone">
             </div>
-            <div class="input">
+            <div class="input password">
                 <label for="password">Mot de passe : </label><br>
                 <input type="password" id="password" name="password">
+                <div class="verif-password">
+                    <div class="Error">
+                        <div class="Size"></div><span id="passwordErrorSize">Au moins 8 characteres</span>
+                    </div>
+                    <div class="Error">
+                        <div class="Maj"></div><span id="passwordErrorMajuscule">Une majuscule</span>
+                    </div>
+                    <div class="Error">
+                        <div class="Min"></div><span id="passwordErrorMinuscule">Une minuscule</span>
+                    </div>
+                    <div class="Error">
+                        <div class="Nbr"></div><span id="passwordErrorNombre">Un nombre</span>
+                    </div>
+                    <div class="Error">
+                        <div class="Special"></div><span id="passwordErrorSpecial">Un charactere special</span>
+                    </div>
+                </div>
             </div>
             <div class="input">
                 <label for="password-verif">Vérification Mot de passe : </label><br>
