@@ -18,10 +18,18 @@
         <div class="gridDashboard">
             <div id="graphsGrid">
                 <div class="graphsX2">
-                    <?php include("includes/graphs/graph.php") ?>
+                    <canvas id="myChart"></canvas>
+                    <!-- <script src="includes/graphs/graph.js"></script> -->
+                    <!-- <script src="includes/graphs/graphProtocolName.js"></script> -->
+                    <!-- <script src="includes/graphs/graphProtocolFrom.js"></script> -->
+                    <!-- <script src="includes/graphs/graphProtocolDest.js"></script> -->
+                    <!-- <script src="includes/graphs/graphChecksumStatus.js"></script> -->
+                    <!-- <script src="includes/graphs/graphHeaderChecksum.js"></script> -->
+                    <script src="includes/graphs/graphIpDest.js"></script>
                 </div>
                 <div class="graphsX2">
-                    <?php include("includes/graphs/graph2.php") ?>
+                    <canvas id="myChart2"></canvas>
+                    <script src="includes/graphs/graphTTL.js"></script>
                 </div>
             </div>
             <div id="dashTable">

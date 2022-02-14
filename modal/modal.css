@@ -1,0 +1,123 @@
+/* Modal de Base/Inscription */
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #e4e4e4;
+  color: #7856ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 65%;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  min-width: 30%;
+  animation: pop 0.5s ease-in-out 1;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.close {
+  margin: 0 0 0 auto;
+  font-size: 40px;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
+  transition-duration: 0.3s;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+}
+input {
+  border: none;
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #44475d;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+input:focus {
+  border: 1px solid #7856ff;
+  outline: none;
+}
+.submit:not(:hover) {
+  border: 2px solid #7856ff;
+  border-radius: 8px;
+  color: #7856ff;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submit:hover {
+  border: 2px solid #7856ff;
+  border-radius: 8px;
+  color: white;
+  background-color: #7856ff;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Modal Connexion */
+
+.connect-content {
+  min-height: 30%;
+  color: #e4e4e4;
+  background-color: #7856ff;
+}
+
+.connect-submit:not(:hover) {
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  background-color: #7856ff;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.connect-submit:hover {
+  border: 2px solid #7856ff;
+  border-radius: 8px;
+  color: #7856ff;
+  background-color: white;
+  height: 52px;
+  width: 252px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 6px;
+}
