@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <title>Smart Frames | Dashboard</title>
 </head>
@@ -19,18 +20,40 @@
             <div id="graphsGrid">
                 <div class="graphsX2">
                     <canvas id="myChart"></canvas>
-                    <!-- <script src="includes/graphs/graph.js"></script> -->
+                    <script src="includes/graphs/graphFlagsCode.js"></script>
                     <!-- <script src="includes/graphs/graphProtocolName.js"></script> -->
                     <!-- <script src="includes/graphs/graphProtocolFrom.js"></script> -->
                     <!-- <script src="includes/graphs/graphProtocolDest.js"></script> -->
                     <!-- <script src="includes/graphs/graphChecksumStatus.js"></script> -->
                     <!-- <script src="includes/graphs/graphHeaderChecksum.js"></script> -->
-                    <script src="includes/graphs/graphIpDest.js"></script>
+                    <!-- <script src="includes/graphs/graphIpDest.js"></script> -->
                 </div>
                 <div class="graphsX2">
                     <canvas id="myChart2"></canvas>
                     <script src="includes/graphs/graphTTL.js"></script>
                 </div>
+            </div>
+            <div id="selectorBox">
+                <select>
+                    <option value="protocolName"></option>
+                    <option value="protocolFrom"></option>
+                    <option value="protocolDest"></option>
+                    <option value="flagsCode"></option>
+                    <option value="checksumStatus"></option>
+                    <option value="headerChecksum"></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <select>
+                    <option value="protocolName"></option>
+                    <option value="protocolFrom"></option>
+                    <option value="protocolDest"></option>
+                    <option value="flagsCode"></option>
+                    <option value="checksumStatus"></option>
+                    <option value="headerChecksum"></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
             </div>
             <div id="dashTable">
                 <table>

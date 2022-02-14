@@ -30,17 +30,10 @@
         <div class="button">
             <span id="connexion">Connexion</span>
             <span id="inscription">Inscription</span>
-
         </div>
-
-
-
         <script src="modal/homePageModal.js"></script>
-
     </main>
     <?php include("includes/footer.php") ?>
-
-
 </body>
 
 </html>
