@@ -12,9 +12,14 @@
 </head>
 
 <body>
+    <?php
+    session_start();
+    session_destroy(); ?>
+    <?php include("includes/header.php") ?>
     <?php include("modal/ModalConnexion.php") ?>
     <?php include("modal/ModalInscription.php") ?>
-    <?php include("includes/header.php") ?>
+    <?php include("modal/ModalErreur.php") ?>
+
     <main>
         <div class="text">
             <h2>Bienvenue sur<br>Smart Frames</h2>
@@ -31,7 +36,7 @@
 
 
         <script src="modal/homePageModal.js"></script>
-       
+
     </main>
     <?php include("includes/footer.php") ?>
 
