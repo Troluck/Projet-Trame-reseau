@@ -1,15 +1,6 @@
-<<<<<<< Updated upstream
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
 session_start();
-=======
-   <header>
-       <div class="header-left">
-           <a href="homePage.php" class=lienLogo>
-               <img src="img/logosf.png" id="logo-img" alt="logo Smart Frames">
-           </a>
-           <span class="lienLogo">Smart Frames</span>
->>>>>>> Stashed changes
 
 ?>
 
