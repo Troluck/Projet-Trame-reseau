@@ -15,47 +15,99 @@
 
 <body>
     <?php include("includes/header.php") ?>
+    <?php if (isset($_POST['graph1selector'])) {
+        // var_dump($_POST);
+        $choice1 = $_POST['graph1selector'];
+        if ($choice1 == "protocolName") {
+            $graph = 'graphProtocolName.js';
+        } elseif ($choice1 == "protocolFrom") {
+            $graph = 'graphProtocolFrom.js';
+        } elseif ($choice1 == "protocolDest") {
+            $graph = 'graphProtocolDest.js';
+        } elseif ($choice1 == "flagsCode") {
+            $graph = 'graphFlagsCode.js';
+        } elseif ($choice1 == "checksumStatus") {
+            $graph = 'graphChecksumStatus.js';
+        } elseif ($choice1 == "headerChecksum") {
+            $graph = 'graphHeaderChecksum.js';
+        } elseif ($choice1 == "ipFrom") {
+            $graph = 'graphIpFrom.js';
+        } elseif ($choice1 == "ipDest") {
+            $graph = 'graphIpDest.js';
+        } else {
+            $graph = 'graphVide.js';
+        }
+    } else {
+        $graph = 'graphVide.js';
+    }
+    ?>
+    <?php if (isset($_POST['graph2selector'])) {
+        var_dump($_POST);
+        $choice2 = $_POST['graph2selector'];
+        if ($choice2 == "protocolName") {
+            $graph2 = 'graphProtocolName.js';
+        } elseif ($choice2 == "protocolFrom") {
+            $graph2 = 'graphProtocolFrom.js';
+        } elseif ($choice2 == "protocolDest") {
+            $graph2 = 'graphProtocolDest.js';
+        } elseif ($choice2 == "flagsCode") {
+            $graph2 = 'graphFlagsCode.js';
+        } elseif ($choice2 == "checksumStatus") {
+            $graph2 = 'graphChecksumStatus.js';
+        } elseif ($choice2 == "headerChecksum") {
+            $graph2 = 'graphHeaderChecksum.js';
+        } elseif ($choice2 == "ipFrom") {
+            $graph2 = 'graphIpFrom.js';
+        } elseif ($choice2 == "ipDest") {
+            $graph2 = 'graphIpDest.js';
+        } else {
+            $graph2 = 'graphVide.js';
+        }
+    } else {
+        $graph2 = 'graphVide.js';
+    }
+    ?>
     <main>
         <div class="gridDashboard">
             <div id="graphsGrid">
                 <div class="graphsX2">
                     <canvas id="myChart"></canvas>
-                    <script src="includes/graphs/graph1/ "></script>
-                    <!-- <script src="includes/graphs/graphProtocolName.js"></script> -->
-                    <!-- <script src="includes/graphs/graphProtocolFrom.js"></script> -->
-                    <!-- <script src="includes/graphs/graphProtocolDest.js"></script> -->
-                    <!-- <script src="includes/graphs/graphChecksumStatus.js"></script> -->
-                    <!-- <script src="includes/graphs/graphHeaderChecksum.js"></script> -->
-                    <!-- <script src="includes/graphs/graphIpDest.js"></script> -->
+                    <script src="includes/graphs/graph1/<?php echo $graph ?>"></script>
                 </div>
                 <div class="graphsX2">
                     <canvas id="myChart2"></canvas>
-                    <script src="includes/graphs/graph2/graphTTL.js"></script>
+                    <script src="includes/graphs/graph2/<?php echo $graph2 ?>"></script>
                 </div>
             </div>
             <div id="selectorBox">
-                <select id="graph1selector">
-                    <option value="based">- Graph I -</option>
-                    <option value="protocolName">Nom des protocoles utilisés :</option>
-                    <option value="protocolFrom">Protocoles en provenance de :</option>
-                    <option value="protocolDest">Protocoles à destination de :</option>
-                    <option value="flagsCode">Code de drapeau utilisés :</option>
-                    <option value="checksumStatus">Status des protocole checksum :</option>
-                    <option value="headerChecksum">Header checksum</option>
-                    <option value="ipFrom">IP en provenance de :</option>
-                    <option value="ipDest">IP à destination de :</option>
-                </select>
-                <select id="graph2selector">
-                    <option value="based">- Graph II -</option>
-                    <option value="protocolName">Nom des protocoles utilisés :</option>
-                    <option value="protocolFrom">Protocoles en provenance de :</option>
-                    <option value="protocolDest">Protocoles à destination de :</option>
-                    <option value="flagsCode">Code de drapeau utilisés :</option>
-                    <option value="checksumStatus">Status des protocole checksum :</option>
-                    <option value="headerChecksum">Header checksum</option>
-                    <option value="ipFrom">IP en provenance de :</option>
-                    <option value="ipDest">IP à destination de :</option>
-                </select>
+                <form action="" method="post">
+                    <select name="graph1selector">
+                        <option value="based">- Graph I -</option>
+                        <option value="protocolName">Nom des protocoles utilisés :</option>
+                        <option value="protocolFrom">Protocoles en provenance de :</option>
+                        <option value="protocolDest">Protocoles à destination de :</option>
+                        <option value="flagsCode">Code de drapeau utilisés :</option>
+                        <option value="checksumStatus">Status des protocole checksum :</option>
+                        <option value="headerChecksum">Header checksum</option>
+                        <option value="ipFrom">IP en provenance de :</option>
+                        <option value="ipDest">IP à destination de :</option>
+                    </select>
+                    <input type="submit" value="Changer graphique 1">
+                </form>
+                <form action="" method="post">
+                    <select name="graph2selector">
+                        <option value="based">- Graph II -</option>
+                        <option value="protocolName">Nom des protocoles utilisés :</option>
+                        <option value="protocolFrom">Protocoles en provenance de :</option>
+                        <option value="protocolDest">Protocoles à destination de :</option>
+                        <option value="flagsCode">Code de drapeau utilisés :</option>
+                        <option value="checksumStatus">Status des protocole checksum :</option>
+                        <option value="headerChecksum">Header checksum</option>
+                        <option value="ipFrom">IP en provenance de :</option>
+                        <option value="ipDest">IP à destination de :</option>
+                    </select>
+                    <input type="submit" value="Changer graphique 2">
+                </form>
             </div>
             <div id="dashTable">
                 <table>

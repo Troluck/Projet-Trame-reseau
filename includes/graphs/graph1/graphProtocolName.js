@@ -15,7 +15,7 @@ $(document).ready(function () {
         const ctx3 = document.getElementById('myChart');
 
         const myChart3 = new Chart(ctx3, {
-            type: 'pie',
+            type: 'bar',
             data: {
                 labels: keys,
                 datasets: [{
