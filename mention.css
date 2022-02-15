@@ -45,3 +45,9 @@ li {
     border-radius: 30px;
     opacity: 0.5;
 }
+
+@media only screen and (max-width: 400px) {
+    li {
+        margin: 10px 86px 20px;
+    }
+}
