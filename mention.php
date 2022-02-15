@@ -53,7 +53,7 @@ $title = 'Mentions légales';
     <div class="mention">
     <ol>
     <h3>Conditions d’utilisation :</h3>
-    <h3><li>Conditions lié au RGPD :</li></h3>
+    <li><h3>Conditions lié au RGPD :</h3></li>
         <p>toute informations collecter lors de votre inscription n'est qu'a but purement statistiques.
         Ces données ne seront utilisé que par Smart Frames et ne seront donc vendu d'aucune façon que ce soit
         Ces données seront stocker pendant 5 ans aprés quoi, Nous effacerons manuellement les données
@@ -89,7 +89,7 @@ $title = 'Mentions légales';
             Dans tous les cas, vous pouvez refuser de fournir vos données personnelles. Dans ce cas, vous ne pourrez pas utiliser les services du site, notamment celui de solliciter des renseignements sur notre société, ou de recevoir les lettres d’information.
             Enfin, nous pouvons collecter de manière automatique certaines informations vous concernant lors d’une simple navigation sur notre site Internet, notamment : des informations concernant l’utilisation de notre site, comme les zones que vous visitez et les services auxquels vous accédez, votre adresse IP, le type de votre navigateur, vos temps d’accès.
             De telles informations sont utilisées exclusivement à des fins de statistiques internes, de manière à améliorer la qualité des services qui vous sont proposés. Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
-<p>cliquer<a href="mailto: smart.frms@gmail.com">ici</a>pour nous envoyer un email </p>
+<p>cliquer<a href="mailto: smart.frms@gmail.com"> ici </a>pour nous envoyer un email </p>
         </div>
         </ol>
 </main>
