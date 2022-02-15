@@ -18,7 +18,7 @@ $(document).ready(function () {
                     label: 'Flags Code Usage',
                     data: values,
                     backgroundColor: [
-                        'rgba(0, 0, 255, 0.5)',
+                        'rgba(179, 179, 179, 0.9)',
                         'rgba(255, 0, 0, 0.5)',
                         'rgba(0, 255, 0, 0.5)'
                     ],

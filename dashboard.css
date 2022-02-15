@@ -3,24 +3,28 @@
     height: auto;
     border: #111324 2px solid;
     position: relative;
-    margin: 0;
+    margin: 10px 10px 0 10px;
     border-radius: 2% 2% 2% 2%;
+
   }
   
   #dashTable{
-    width: 80%;
-    position: relative;
-    margin: 0 auto;
-    height: 50%;
-    
+    width: 90%;
+    margin: 2%;
   } 
+
+  div.dataTables_wrapper {
+    margin: 0 auto;
+}
+
   .gridDashboard{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 800px;  
+    justify-content: space-evenly;
+    height: fit-content;  
   } 
+
   #graphsGrid{
     position: relative;
     top: 2%;
@@ -31,38 +35,53 @@
     height: fit-content;
     margin-bottom: 2%;
   }
+
   #selectorBox{
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: center;
-    margin-top: 2%;
+    justify-content: space-evenly;
   }
 
 body{
   height: fit-content;
 }
 
-main{
-  height: px;
-}
-
 footer{
-  position:relative;
-  top: 100px;
+  position: relative;
+  bottom: 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-@media (max-width: 650px){
+#button{
+  border-radius: 50px;
+  background-color: #7856ff;
+  border: transparent;
+  color: white;
+}
+
+form{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 920px){
   #graphsGrid{
     flex-flow: column;
   }
   .graphsX2{
     width: 100%;
+    margin: 10px 0;
   }
 
-  footer{
-    top: 200px;
+  form{
+    display: block;
+    height: 80px;
+    text-align: center;
   }
 }
