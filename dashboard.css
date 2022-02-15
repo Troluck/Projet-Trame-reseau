@@ -3,9 +3,9 @@
     height: auto;
     border: #111324 2px solid;
     position: relative;
-    margin: 10px 10px 0 10px;
+    margin: 20px 10px 0 10px;
     border-radius: 2% 2% 2% 2%;
-
+    background-color: #f0f0f0;
   }
   
   #dashTable{
@@ -54,11 +54,8 @@ footer{
   width: 100%;
 }
 
-#button{
-  border-radius: 50px;
-  background-color: #7856ff;
-  border: transparent;
-  color: white;
+input, select{
+  background-color: white !important;
 }
 
 form{
@@ -68,6 +65,39 @@ form{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+th{
+  color: white;
+  background-color: #111324;
+}
+
+select{
+  border-radius: 2px;
+  border: solid 2px #111324;
+}
+
+th:hover{
+  cursor: pointer;
+}
+
+#button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  border-radius: 50px;
+  background-color: #7856ff !important;
+  border: solid 2px #7856ff;
+  color: white;
+  cursor: pointer;
+}
+
+#button:not(:hover) {
+  transform: scale(1);
+  transition-duration: 0.3s;
+  border-radius: 50px;
+  border: solid 2px #7856ff;
+  background-color: white;
+  color: #7856ff;
 }
 
 @media (max-width: 920px){
@@ -81,7 +111,13 @@ form{
 
   form{
     display: block;
-    height: 80px;
+    height: fit-content;
     text-align: center;
+    margin: 1%;
+    padding: 1%;
+  }
+
+  #button, input{
+    margin: 3px 2px;
   }
 }

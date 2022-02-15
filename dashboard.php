@@ -17,7 +17,7 @@
 <script>
     $(document).ready(function() {
         $('#table_id').DataTable({
-            "scrollY": 250,
+            "scrollY": 400,
             "scrollX": true,
         });
     });

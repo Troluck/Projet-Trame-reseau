@@ -22,20 +22,32 @@ $(document).ready(function () {
                     label: 'Protocol Name Usage',
                     data: values,
                     backgroundColor: [
-                        'rgba(0, 0, 255, 0.5)',
-                        'rgba(255, 0, 0, 0.5)',
-                        'rgba(0, 255, 0, 0.5)'
+                        'rgba(50, 50, 220, 0.9)',
+                        'rgba(220, 50, 50, 0.9)',
+                        'rgba(50, 220, 50, 0.9)'
                     ],
                     borderColor: [
-                        'rgba(0, 0, 255, 1)',
-                        'rgba(255, 0, 0, 1)',
-                        'rgba(0, 255, 0, 1)'
+                        'rgba(0, 0, 150, 1)',
+                        'rgba(150, 0, 0, 1)',
+                        'rgba(0, 150, 0, 1)'
                     ],
-                    borderWidth: 1
+                    borderRadius: 5,
+                    borderWidth: 2
                 }]
             },
             options: {
-
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            boxWidth: 0,
+                        }
+                    }
+                }
             }
         })
     })

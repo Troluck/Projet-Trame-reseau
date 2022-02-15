@@ -6,22 +6,36 @@ $(document).ready(function () {
         data: {
             labels: ['A', 'B', 'C'],
             datasets: [{
-                label: 'Graph 1',
-                data: [10, 20, 40],
+                label: 'Votre Graphique ici',
+                data: [70, 25, 30],
                 backgroundColor: [
-                    'rgba(0, 0, 255, 0.5)',
-                    'rgba(255, 0, 0, 0.5)',
-                    'rgba(0, 255, 0, 0.5)'
+                    'rgba(50, 50, 50, 0.9)',
+                    'rgba(100, 100, 100, 0.9)',
+                    'rgba(150, 150, 150, 0.9)'
                 ],
                 borderColor: [
-                    'rgba(0, 0, 255, 1)',
-                    'rgba(255, 0, 0, 1)',
-                    'rgba(0, 255, 0, 1)'
+                    'rgba(0, 0, 0, 1)',
+                    'rgba(0, 0, 0, 1)',
+                    'rgba(0, 0, 0, 1)'
                 ],
-                borderWidth: 1
+                borderRadius: 5,
+                borderWidth: 2
             }]
         },
-        options: {}
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        boxWidth: 0,
+                    }
+                }
+            }
+        }
     })
 })
 
