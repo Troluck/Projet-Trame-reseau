@@ -9,9 +9,9 @@ $(document).ready(function () {
                 label: 'Votre Graphique ici',
                 data: [30, 20, 50],
                 backgroundColor: [
-                    'rgba(50, 50, 50, 0.9)',
-                    'rgba(100, 100, 100, 0.9)',
-                    'rgba(150, 150, 150, 0.9)'
+                    'rgba(50, 50, 220, 0.9)',
+                    'rgba(220, 50, 50, 0.9)',
+                    'rgba(50, 220, 50, 0.9)'
                 ],
                 borderColor: [
                     'rgba(0, 0, 0, 1)',

@@ -5,7 +5,7 @@
     position: relative;
     margin: 20px 10px 0 10px;
     border-radius: 2% 2% 2% 2%;
-    background-color: #f0f0f0;
+    background-color: white;
   }
   
   #dashTable{
@@ -75,6 +75,7 @@ th{
 select{
   border-radius: 2px;
   border: solid 2px #111324;
+  margin: 0 10px;
 }
 
 th:hover{
