@@ -15,12 +15,12 @@ $(document).ready(function () {
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Protocol Ports Destination',
+                    label: 'IP destination',
                     data: values,
                     backgroundColor: [
-                        'rgba(0, 0, 255, 0.5)',
-                        'rgba(255, 0, 0, 0.5)',
-                        'rgba(0, 255, 0, 0.5)'
+                        'rgba(179, 179, 179, 0.9)',
+                        'rgba(155, 155, 155, 0.9)',
+                        'rgba(111, 111, 111, 0.9)'
                     ],
                     borderColor: [
                         'rgba(0, 0, 255, 1)',

@@ -3,7 +3,7 @@
            <span>Copyright © Smart Frames France</span>
        </div>
        <div class="footer-right">
-           <a class="mention" href="mentions.php">Mentions légales
+           <a class="mention" href="mention.php">Mentions légales
                <span></span>
            </a>
            <span>|</span>

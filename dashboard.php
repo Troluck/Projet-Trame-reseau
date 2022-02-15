@@ -17,7 +17,7 @@
 <script>
     $(document).ready(function() {
         $('#table_id').DataTable({
-            "scrollY": 200,
+            "scrollY": 250,
             "scrollX": true,
         });
     });
@@ -51,9 +51,7 @@
     } else {
         $graph = 'graphVide.js';
     }
-    ?>
-
-    <?php if (isset($_POST['graph2selector'])) {
+    if (isset($_POST['graph2selector'])) {
         // var_dump($_POST);
         $choice2 = $_POST['graph2selector'];
         if ($choice2 == "protocolName") {
@@ -95,27 +93,59 @@
                 <form action="" method="post">
                     <select name="graph1selector">
                         <option value="based">- Graph I -</option>
-                        <option value="protocolName">Nom des protocoles utilisés :</option>
-                        <option value="protocolFrom">Protocoles en provenance de :</option>
-                        <option value="protocolDest">Protocoles à destination de :</option>
-                        <option value="flagsCode">Code de drapeau utilisés :</option>
-                        <option value="checksumStatus">Status des protocole checksum :</option>
-                        <option value="headerChecksum">Header checksum</option>
-                        <option value="ipFrom">IP en provenance de :</option>
-                        <option value="ipDest">IP à destination de :</option>
+                        <option value="protocolName" <?php if ($choice1 == 'protocolName') {
+                                                            echo 'selected';
+                                                        } ?>>Nom des protocoles utilisés :</option>
+                        <option value="protocolFrom" <?php if ($choice1 == 'protocolFrom') {
+                                                            echo 'selected';
+                                                        } ?>>Protocoles en provenance de :</option>
+                        <option value="protocolDest" <?php if ($choice1 == 'protocolDest') {
+                                                            echo 'selected';
+                                                        } ?>>Protocoles à destination de :</option>
+                        <option value="flagsCode" <?php if ($choice1 == 'flagsCode') {
+                                                        echo 'selected';
+                                                    } ?>>Code de drapeau utilisés :</option>
+                        <option value="checksumStatus" <?php if ($choice1 == 'checksumStatus') {
+                                                            echo 'selected';
+                                                        } ?>>Status des protocole checksum :</option>
+                        <option value="headerChecksum" <?php if ($choice1 == 'headerChecksum') {
+                                                            echo 'selected';
+                                                        } ?>>Header checksum</option>
+                        <option value="ipFrom" <?php if ($choice1 == 'ipFrom') {
+                                                    echo 'selected';
+                                                } ?>>IP en provenance de :</option>
+                        <option value="ipDest" <?php if ($choice1 == 'ipDest') {
+                                                    echo 'selected';
+                                                } ?>>IP à destination de :</option>
                     </select>
+                    <input id="button" type="submit" value="Changer les graphiques">
                     <select name="graph2selector">
                         <option value="based">- Graph II -</option>
-                        <option value="protocolName">Nom des protocoles utilisés :</option>
-                        <option value="protocolFrom">Protocoles en provenance de :</option>
-                        <option value="protocolDest">Protocoles à destination de :</option>
-                        <option value="flagsCode">Code de drapeau utilisés :</option>
-                        <option value="checksumStatus">Status des protocole checksum :</option>
-                        <option value="headerChecksum">Header checksum</option>
-                        <option value="ipFrom">IP en provenance de :</option>
-                        <option value="ipDest">IP à destination de :</option>
+                        <option value="protocolName" <?php if ($choice2 == 'protocolName') {
+                                                            echo 'selected';
+                                                        } ?>>Nom des protocoles utilisés :</option>
+                        <option value="protocolFrom" <?php if ($choice2 == 'protocolFrom') {
+                                                            echo 'selected';
+                                                        } ?>>Protocoles en provenance de :</option>
+                        <option value="protocolDest" <?php if ($choice2 == 'protocolDest') {
+                                                            echo 'selected';
+                                                        } ?>>Protocoles à destination de :</option>
+                        <option value="flagsCode" <?php if ($choice2 == 'flagsCode') {
+                                                        echo 'selected';
+                                                    } ?>>Code de drapeau utilisés :</option>
+                        <option value="checksumStatus" <?php if ($choice2 == 'checksumStatus') {
+                                                            echo 'selected';
+                                                        } ?>>Status des protocole checksum :</option>
+                        <option value="headerChecksum" <?php if ($choice2 == 'headerChecksum') {
+                                                            echo 'selected';
+                                                        } ?>>Header checksum</option>
+                        <option value="ipFrom" <?php if ($choice2 == 'ipFrom') {
+                                                    echo 'selected';
+                                                } ?>>IP en provenance de :</option>
+                        <option value="ipDest" <?php if ($choice2 == 'ipDest') {
+                                                    echo 'selected';
+                                                } ?>>IP à destination de :</option>
                     </select>
-                    <input type="submit" value="Changer les graphiques">
                 </form>
             </div>
             <div id="dashTable">
@@ -144,27 +174,6 @@
                     <tbody>
                         <?php include("includes/dashTable.php") ?>
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Date</th>
-                            <th>Version</th>
-                            <th>Header Length</th>
-                            <th>Service</th>
-                            <th>Identification</th>
-                            <th>Flags Code</th>
-                            <th>TTL</th>
-                            <th>Protocol Name</th>
-                            <th>Protocol Checksum Status</th>
-                            <th>Protocol Ports From</th>
-                            <th>Protocol Ports Destination</th>
-                            <th>Header Checksum</th>
-                            <th>IP From</th>
-                            <th>IP Destination</th>
-                            <th>Protocol Version</th>
-                            <th>Protocol Content Type</th>
-                            <th>Protocol Type</th>
-                        </tr>
-                    </tfoot>
                 </table>
             </div>
         </div>
