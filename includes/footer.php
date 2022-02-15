@@ -6,7 +6,7 @@
            <a class="mention" href="mention.php">Mentions légales
                <span></span>
            </a>
-           <span>|</span>
+           <span class="littleBar">|</span>
            <div class="social-media">
                <span>Nos réseaux sociaux</span>
                <div class="social-media-icon">

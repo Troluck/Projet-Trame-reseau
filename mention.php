@@ -19,7 +19,7 @@ $title = 'Mentions légales';
     <title> smartframes</title>
 </head>
 <?php
-include("includes/header.php");
+include("includes/headerDash.php");
 ?>
 <main>
 

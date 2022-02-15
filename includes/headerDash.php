@@ -30,12 +30,20 @@ session_start();
             }
         }
         ?>
-        <a href="about.php"> Qui sommes nous ?
+        <?php if (!empty($_SESSION['id'])) {
+            echo '<a href="dashboard.php"> Dashboard
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-        </a>
+        </a>';
+        } ?>
+        <!-- <a href="dashboard.php"> Dashboard
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a> -->
     </div>
     <script src="includes/header.js"></script>
 </header>

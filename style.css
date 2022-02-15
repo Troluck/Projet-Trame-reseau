@@ -328,15 +328,23 @@ footer,
   transition-duration: 0.4s;
   transition-delay: 0s;
 }
+
+
+
+
+
 /* RESPONSIVE FOOTER*/
 
-@media (max-width: 650px) {
+@media (max-width: 760px) {
   .footer-left {
     margin-bottom: 4%;
   }
   footer {
     align-items: center;
     flex-direction: column;
+  }
+  .littleBar{
+    display: none;
   }
 }
 
@@ -366,4 +374,28 @@ th {
 
 .lienLogo {
   text-decoration: none;
+}
+
+.littleBar{
+  display: block;
+}
+@media (max-width: 850px){
+  .afficheName{
+    display: none;
+  }
+}
+
+@media (max-width: 550px){
+  span.lienLogo{
+    display: none;
+  }
+  .social-media{
+    display: none;
+  } 
+  .social-media-icon{
+    display: none
+  }
+  .littleBar{
+    display: none;
+  }
 }

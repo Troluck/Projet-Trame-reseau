@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include("includes/header.php") ?>
+    <?php include("includes/headerDash.php") ?>
     <h1> Qui sommes nous ?</h1>
     <main>
         <div class="navigation">
