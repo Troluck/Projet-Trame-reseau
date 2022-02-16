@@ -13,34 +13,55 @@ main {
   min-height: 750px;
 }
 
+.carrousel-presentation,
+.carrousel-staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 80%;
   height: 600px;
   overflow: hidden;
   background-color: #00000008;
 }
+.containerpresentation {
+  background-color: #ffffffff;
+  border: 3px solid #7856ff;
+  border-radius: 8px;
+  width: 1000px;
+}
 
-.carrousel1 {
+.carrousel1,
+.carrousel2 {
   display: none;
   height: 100%;
 }
-.imgcarrousel {
-  width: 40%;
-}
 
 .img {
+  height: 85%;
+}
+.img2 {
   height: 100%;
 }
-.textcarrousel {
+
+.textcarrousel,
+.textcarrousel2 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60%;
 }
-.description {
+.textpresentation {
+  width: 50%;
+}
+.description,
+.description2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,18 +71,22 @@ main {
   margin-bottom: 50px;
 }
 
-.textcarrousel p {
+.textcarrousel p,
+.textcarrousel2 p {
   text-align: center;
   color: #707070;
   font-size: 18px;
 }
+.textpresentation p {
+  font-size: 25px;
+}
 
-.textcarrousel h2 {
+.textcarrousel2 h2 {
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-.textcarrousel h3 {
+.textcarrousel2 h3 {
   font-size: 20px;
 }
 h2,
@@ -69,7 +94,7 @@ h3 {
   color: #44475d;
 }
 
-.textcarrousel span {
+.textcarrousel2 span {
   color: #7856ff;
 }
 
@@ -81,6 +106,9 @@ h3 {
 .imgcarrousel {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   left: -100px;
   animation: slideleft 0.8s forwards;
 }
@@ -138,15 +166,34 @@ figcaption p {
   margin: 0;
 }
 
-.buttonimgbox {
+.buttonimgbox,
+.buttonimgboxstaff {
   border-radius: 45px;
   position: relative;
   margin: auto;
-  width: 80px;
-  height: 80px;
   overflow: hidden;
 }
 
+.buttonimgboxstaff {
+  width: 30px;
+  height: 30px;
+}
+
+.buttonimgbox {
+  width: 80px;
+  height: 80px;
+}
+
+.buttonsecurity,
+.buttonresponsive,
+.buttongraphics {
+  background-color: #7856ff;
+  background-size: cover;
+  background-position: 0px -20px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
 .buttonimgluc {
   background: url(img/LucBoulangerButton.png) no-repeat;
   background-size: cover;
@@ -188,7 +235,7 @@ figcaption p {
 }
 
 @media (max-width: 1400px) {
-  .textcarrousel h2 {
+  .textcarrousel2 h2 {
     text-align: center;
   }
 
@@ -196,11 +243,20 @@ figcaption p {
     align-items: flex-end;
   }
   .img {
-    height: 90%;
+    height: 100%;
   }
-  .textcarrousel {
+  .textcarrousel2 {
     justify-content: flex-end;
     margin-right: 5%;
+  }
+  .containerpresentation {
+    width: 80%;
+  }
+  .description p {
+    font-size: 30px;
+  }
+  .textpresentation p {
+    font-size: 25px;
   }
 }
 
@@ -211,13 +267,38 @@ figcaption p {
   .textcarrousel {
     margin-top: 5%;
   }
+
+  .containerpresentation {
+    height: 600px;
+    width: 800px;
+  }
+  .carrousel1 {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgcarrousel {
+    align-items: center;
+    height: 50%;
+  }
+
+  .textpresentation {
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  .textpresentation p {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 900px) {
   .container {
     width: 90%;
   }
-  .textcarrousel {
+  .textcarrousel2 {
     justify-content: flex-end;
     margin-top: 10%;
   }
@@ -226,16 +307,11 @@ figcaption p {
   h1 {
     font-size: 47px;
   }
-  main {
-    flex-direction: row;
-  }
-  .navigation {
-    width: 30%;
-  }
+
   .container {
     width: 65%;
   }
-  .carrousel1 {
+  .carrousel2 {
     width: 100%;
     flex-direction: column;
   }
