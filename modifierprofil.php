@@ -64,7 +64,7 @@ if (!empty($_POST)) {
             >MODIFICATION</h1>
             <form method="post">
                
-                <input value="<?php echo $users["name"]; ?>" type="text" placeholder="Votre nom" name="name" 
+                <input value="<?php echo $users["name"]; ?>" type="text" placeholder="Votre nom" name="name">
                 
                 
                 <input value="<?php echo $users["name"]; ?>"  type="email" placeholder="Adresse mail" name="email">
