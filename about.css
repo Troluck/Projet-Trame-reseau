@@ -10,15 +10,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 750px;
 }
 
 .carrousel-presentation,
 .carrousel-staff {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .container {
@@ -103,7 +106,8 @@ h3 {
   display: flex;
 }
 
-.imgcarrousel {
+.imgcarrousel,
+.imgcarrousel2 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -118,7 +122,8 @@ h3 {
   }
 }
 
-.description {
+.description,
+.description2 {
   position: relative;
   display: flex;
   right: -100px;
@@ -302,22 +307,63 @@ figcaption p {
     justify-content: flex-end;
     margin-top: 10%;
   }
+  .imgcarrousel2 {
+    width: 50%;
+  }
 }
 @media (max-width: 800px) {
-  h1 {
-    font-size: 47px;
+  .carrousel-staff {
+    width: 95%;
+  }
+  .textcarrousel2 h1 {
+    font-size: 27px;
+  }
+  .textcarrousel2 h3 {
+    font-size: 17px;
+  }
+  .carousselstaff figure {
+    width: 100%;
+  }
+  .carousselstaff li {
+    margin-right: 0;
   }
 
-  .container {
-    width: 65%;
+  .containerstaff {
+    justify-content: center;
+    width: 90%;
+  }
+  .navstaff {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navstaff li {
+    margin-bottom: 5px;
   }
   .carrousel2 {
     width: 100%;
-    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgcarrousel2 {
+    height: 100%;
+    width: 40%;
+    align-items: flex-end;
+  }
+  .textcarrousel2 {
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 5px;
+    width: 60%;
   }
 
   .img {
     height: 100%;
+  }
+  .img2 {
+    height: 85%;
   }
   .imgcarrousel {
     justify-content: center;
@@ -336,25 +382,56 @@ figcaption p {
   li {
     margin-bottom: 20%;
   }
+  #liststaff li {
+    margin: 0;
+  }
+
   .textcarrousel h2 {
     margin-bottom: 5px;
     font-size: 30px;
   }
 }
 
-@media (max-width: 500px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  main {
-    flex-direction: column-reverse;
-  }
-  .navigation {
+@media (max-width: 730px) {
+  .containerstaff {
     width: 100%;
   }
-  figure {
-    width: 50px;
+  .img2 {
+    height: 80%;
+  }
+  #liststaff {
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .carrousel2 {
+    flex-direction: column-reverse;
+  }
+  .imgcarrousel2 {
+    height: 65%;
+  }
+  .textcarrousel2 {
+    height: 55%;
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .textcarrousel2 h2 {
+    margin: 0;
+  }
+  .description2 {
+    margin-top: 25%;
+    width: 100%;
+  }
+  .img2 {
+    height: 100%;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navstaff {
+    flex-wrap: nowrap;
   }
   ul {
     width: 100%;
@@ -363,21 +440,34 @@ figcaption p {
     margin-bottom: 0;
     padding-left: 0;
   }
-  .navigation {
-    display: flex;
-  }
-  .container {
-    width: 90%;
-  }
-  figcaption p {
-    display: flex;
-  }
-  figcaption h2 {
-    text-align: center;
-  }
 }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+  .textcarrousel2 h2 {
+    font-size: 25px;
+  }
+  .textcarrousel2 p {
+    font-size: 15px;
+  }
+  figure {
+    width: 50px;
+  }
+  .description2 {
+    margin-bottom: 0;
+  }
+  .navstaff {
+    margin-bottom: 10px;
+  }
+  .nav1 {
+    width: 80%;
+  }
+
+  .container {
+    width: 90%;
+  }
   h1 {
     font-size: 35px;
   }

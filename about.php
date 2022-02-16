@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="navigation">
+            <div class="navigation nav1">
 
                 <ul id="list">
                     <li>
@@ -94,9 +94,9 @@
             </div>
         </div>
         <div class="carrousel-staff">
-            <div class="navigation">
+            <div class="navigation navstaff">
 
-                <ul id="list">
+                <ul id="liststaff">
                     <li>
                         <figure class="buttonstaff activebutton 1">
                             <div class="buttonimgbox imgluc">
@@ -136,7 +136,7 @@
                 </ul>
             </div>
 
-            <div class="container">
+            <div class="container containerstaff">
 
                 <div class="carrousel2 active">
 
