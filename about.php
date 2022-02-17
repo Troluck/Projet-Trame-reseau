@@ -31,7 +31,7 @@
                     <div class="textcarrousel textpresentation">
                         <div class="description">
                             <p>La sécurité de vos données de votre réseau d'entreprise est notre priorité.</p>
-                            <p>Nous avons tout mis en oeuvre pour éviter le piratage de vos données personnel et d'entreprise</p>
+                            <p>Nous avons tout mis en oeuvre pour éviter le piratage de vos données personnelles et d'entreprise</p>
 
                         </div>
                     </div>
@@ -45,9 +45,9 @@
                     <div class="textcarrousel textpresentation">
                         <div class="description">
 
-                            <p>Acceder à vos données où vous le voulez.</p>
-                            <p> Le site est accessible dans tout les formats
-                                ordinateur, tablettes, téléphones...</p>
+                            <p>Accéder à vos données où vous le voulez.</p>
+                            <p> Le site est accessible dans tout les formats :
+                                ordinateur, tablette, smartphone...</p>
 
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                     <div class="textcarrousel textpresentation">
                         <div class="description">
                             <p>Analyser simplement votre réseau d'entreprise</p>
-                            <p>Votre espace client vous propose de comprendre comment marche votre réseau grâce au graphiques et au statistiques gérer par nos soins</p>
+                            <p>Votre espace client vous propose de comprendre comment marche votre réseau grâce aux graphiques et aux statistiques gérés par nos soins</p>
 
                         </div>
                     </div>
@@ -97,6 +97,7 @@
                 </ul>
             </div>
         </div>
+        <hr>
         <div class="carrousel-staff">
             <div class="navigation navstaff">
 
@@ -151,8 +152,8 @@
                     <div class="textcarrousel2">
                         <div class="description2">
                             <h2>Luc <span>Boulanger<span></h2>
-                            <p>Etudiant en développement web chez NeedForSchool et co-cofondateur de SmartFrames</p>
-                            <p>C'est lui qui s'occupe du design du site</p>
+                            <p>Etudiant en développement web chez NeedForSchool et co-fondateur de SmartFrames</p>
+                            <p>C'est lui qui s'occupe du design du site et de la sécurité de votre compte</p>
                             <h3>luc.boulanger@sframes.fr</h3>
                         </div>
                     </div>
@@ -166,7 +167,7 @@
                     <div class="textcarrousel2">
                         <div class="description2">
                             <h2>Lukas <span>Vuylsteke<span></h2>
-                            <p>Etudiant en développement web chez NeedForSchool et co-cofondateur de SmartFrames</p>
+                            <p>Etudiant en développement web chez NeedForSchool et co-fondateur de SmartFrames</p>
                             <p>C'est lui qui analyse vos données réseaux</p>
                             <h3>lukas.vuylsteke@sframes.fr</h3>
                         </div>
@@ -181,8 +182,8 @@
                     <div class="textcarrousel2">
                         <div class="description2">
                             <h2>Theo <span>Lemettais<span></h2>
-                            <p>Etudiant en développement web chez NeedForSchool et co-cofondateur de SmartFrames</p>
-                            <p>C'est lui qui gère votre compte et sa sécurité</p>
+                            <p>Etudiant en développement web chez NeedForSchool et co-fondateur de SmartFrames</p>
+                            <p>C'est lui qui gère le Règlement général sur la protection des données du site</p>
                             <h3>theo.lemettais@sframes.fr</h3>
                         </div>
                     </div>

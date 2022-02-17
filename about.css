@@ -2,7 +2,7 @@ h1 {
   font-size: 60px;
   color: #44475d;
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -20,7 +20,6 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -237,6 +236,13 @@ figcaption p {
 .buttonimgbox:not(:hover) {
   transform: scale(1);
   transition-duration: 0.2s;
+}
+
+hr {
+  width: 80%;
+  border-color: #7856ff;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1400px) {
