@@ -6,6 +6,6 @@ if (isset($_POST["Id4"])) {
 
     $drop = $pdo->prepare("DELETE FROM users WHERE id = $id");
     $drop->execute();
-
+    session_destroy();
     header('location:homePage.php');
 }

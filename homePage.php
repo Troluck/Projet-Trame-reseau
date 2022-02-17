@@ -20,9 +20,7 @@
     <?php include("modal/ModalInscription.php") ?>
     <?php include("includes/header.php") ?>
 
-
     <main>
-
         <div class="text">
             <h2>Bienvenue sur<br>Smart Frames</h2>
             <h3>Le site qui permet de décoder votre réseau d'entreprise</h3>

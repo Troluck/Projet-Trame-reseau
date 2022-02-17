@@ -1,7 +1,10 @@
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
 session_start();
-include('modal/ModalDrop.php');
+
+if (isset($_SESSION["id"])) {
+    include('modal/ModalDrop.php');
+}
 ?>
 
 <header>
