@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="modal/modal.css">
+
     <title>Smart Frames- Qui sommes nous ?</title>
 </head>
 
 <body>
-    <?php include("includes/header.php") ?>
+    <?php
+    include("includes/headerDash.php");
+    ?>
     <h1> Qui sommes nous ?</h1>
     <main>
         <div class="carrousel-presentation">
@@ -186,9 +190,11 @@
             </div>
         </div>
         <script src="about.js"></script>
+
     </main>
     <?php include("includes/footer.php") ?>
 
 </body>
+<script src="modal/headerModal.js"></script>
 
 </html>

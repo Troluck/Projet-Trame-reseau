@@ -15,12 +15,14 @@ $title = 'Mentions légales';
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="mention.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="modal/modal.css">
     <title> smartframes</title>
 </head>
 <?php
 include("includes/headerDash.php");
 ?>
+
+<body></body>
 <main>
 
     <ol>
@@ -118,3 +120,7 @@ include("includes/headerDash.php");
     </ol>
 </main>
 <?php include("includes/footer.php"); ?>
+</body>
+<script src="modal/headerModal.js"></script>
+
+</html>

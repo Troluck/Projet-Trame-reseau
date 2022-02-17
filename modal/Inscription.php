@@ -29,7 +29,7 @@ if (isset($_POST["Id1"])) {
         </script>
         <?php
     } else {
-        $requestUtilisateur = $pdo->prepare("SELECT * FROM users WHERE email = '$email'");
+        $requestUtilisateur = $pdo->prepare("SELECT * FROM users WHERE id = $_SESSION[id]");
         $requestUtilisateur->execute();
         $users = $requestUtilisateur->fetch();
 

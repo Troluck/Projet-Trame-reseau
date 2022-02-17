@@ -1,7 +1,7 @@
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=smartframes',  "root", "root");
 session_start();
-
+include('modal/ModalDrop.php');
 ?>
 
 <header>
@@ -24,12 +24,13 @@ session_start();
             date_default_timezone_set('Europe/Paris');
             $date = date('H');
             if ($date < 18 && $date > 6) {
-                echo '<p class=afficheName> Bonjour ' . $affprofil[0]["name"] . '</p>';
+                echo '<p class=afficheName> Bonjour ' . $affprofil[0]["name"] . "<img id='settings' src='img/parametres.png'></p>";
             } else {
-                echo '<p class=afficheName> Bonsoir ' . $affprofil[0]["name"] . '</p>';
+                echo '<p class=afficheName> Bonsoir ' . $affprofil[0]["name"] . "<img id='settings' src='img/parametres.png'></p>";
             }
         }
         ?>
+
         <a href="about.php"> Qui sommes nous ?
             <span></span>
             <span></span>

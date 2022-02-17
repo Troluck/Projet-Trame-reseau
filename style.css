@@ -2,6 +2,7 @@
 body {
   background-color: #e4e4e4;
   width: 100%;
+  min-width: 440px;
   height: 400px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +32,7 @@ header {
 .header-right {
   display: flex;
   align-items: center;
-}
+} 
 
 .header-left {
   margin-left: 2%;
@@ -329,7 +330,16 @@ footer,
   transition-delay: 0s;
 }
 
+#settings{
+ height: 30px;
+ margin : 5px;
+}
 
+#settings:hover{
+  transform: rotate(360deg);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
 
 
 
@@ -379,21 +389,17 @@ th {
 .littleBar{
   display: block;
 }
-@media (max-width: 850px){
-  .afficheName{
+@media (max-width: 970px){
+  span.lienLogo{
     display: none;
   }
 }
 
-@media (max-width: 550px){
-  span.lienLogo{
-    display: none;
-  }
-  .social-media{
-    display: none;
-  } 
-  .social-media-icon{
-    display: none
+@media (max-width: 450px){
+  .footer-right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .littleBar{
     display: none;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="modal/modal.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
@@ -16,9 +17,13 @@
 </head>
 <script>
     $(document).ready(function() {
+        -
         $('#table_id').DataTable({
             "scrollY": 400,
             "scrollX": true,
+            language: {
+                url: "https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/French.json"
+            }
         });
     });
 </script>
@@ -182,5 +187,6 @@
     <?php include("includes/footer.php") ?>
 </body>
 
+<script src="modal/headerModal.js"></script>
 
 </html>

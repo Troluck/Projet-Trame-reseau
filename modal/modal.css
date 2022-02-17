@@ -57,6 +57,7 @@ form {
 label {
   font-size: 20px;
 }
+
 input {
   border: none;
   height: 30px;
@@ -67,6 +68,32 @@ input {
   color: #44475d;
   margin-top: 8px;
   margin-bottom: 18px;
+}
+
+.delete-content{
+  min-height: fit-content;
+  background-color: red;
+  color: white;
+  width: fit-content;
+}
+
+.delete-content h1{
+  color: white;
+}
+
+#submit-delete{
+  border-color: black;
+  color: black;
+  margin: auto;
+}
+
+.form-input{
+  justify-content: center;
+}
+
+#submit-delete:hover{
+  background-color: darkred;
+  color: white;
 }
 
 .password {
@@ -126,6 +153,8 @@ input:focus {
   color: #e4e4e4;
   background-color: #7856ff;
 }
+
+
 
 .connect-submit:not(:hover) {
   border: 2px solid white;

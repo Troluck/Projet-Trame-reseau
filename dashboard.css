@@ -46,14 +46,6 @@ body{
   height: fit-content;
 }
 
-footer{
-  position: relative;
-  bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 input, select{
   background-color: white !important;
 }
@@ -73,10 +65,11 @@ th{
 }
 
 select{
-  border-radius: 2px;
+  border-radius: 10px;
   border: solid 2px #111324;
   margin: 0 10px;
-}
+  height: fit-content;
+} 
 
 th:hover{
   cursor: pointer;
