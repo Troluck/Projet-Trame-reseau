@@ -39,5 +39,4 @@ include('modal/ModalDrop.php');
         </a>';
         } ?>
     </div>
-    <script src="includes/header.js"></script>
 </header>

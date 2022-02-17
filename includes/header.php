@@ -41,5 +41,4 @@ if (isset($_SESSION["id"])) {
             <span></span>
         </a>
     </div>
-    <script src="includes/header.js"></script>
 </header>

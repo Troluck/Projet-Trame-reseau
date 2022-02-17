@@ -92,7 +92,7 @@ input {
 }
 
 #submit-delete:hover{
-  background-color: darkred;
+  background-color: darkred !important;
   color: white;
 }
 
