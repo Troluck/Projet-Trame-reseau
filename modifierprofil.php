@@ -1,27 +1,25 @@
 
 <?php
-session_start();
-include("modal/connexion.php");
+//session_start();
+//include("modal/connexion.php");
 
 
-if (!isset($_SESSION['id'])) {
-    header('Location: homePage.php');
-    exit;
-}
+//if (!isset($_SESSION['id'])) {
+  //  header('Location: modifierprofil.php');
+  //  exit;
+//}
 
-// On récupère les informations de l'users connecté
+//exitIfNotConnected();
 
-exitIfNotConnected();
+//if (!empty($_GET["id"])) {
+   // $id = $_GET["id"];
 
-if (!empty($_GET["id"])) {
-    $id = $_GET["id"];
-
-    $requestAnnonces = $pdo->prepare(
-        "SELECT * FROM users WHERE id = $id;"
-    );
-    $requestAnnonces->execute();
-    $annonce = $requestAnnonces->fetch();
-}
+    //$requestAnnonces = $pdo->prepare(
+       // "SELECT * FROM users WHERE id = $id;"
+    //);
+   // $requestAnnonces->execute();
+    //$annonce = $requestAnnonces->fetch();
+//}
 
 if (!empty($_POST)) {
     if (
@@ -34,7 +32,7 @@ if (!empty($_POST)) {
             "UPDATE `smartframes` SET `users`='" . $_POST["name"] . "',`name`='" . $_POST["email"] . " WHERE id = $id"
         );
         if ($requestCreation->execute()) {
-            header('Location: homepage.php');
+            header('Location:modifierprofil.php');
         } else {
             echo "Erreur Execution Requête";
         }
