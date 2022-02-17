@@ -24,9 +24,9 @@ include('modal/ModalDrop.php');
             date_default_timezone_set('Europe/Paris');
             $date = date('H');
             if ($date < 18 && $date > 6) {
-                echo '<p class=afficheName> Bonjour ' . $affprofil[0]["name"] . "<img id='settings' src='img/parametres.png'></p>";
+                echo '<p class=afficheName> Bonjour ' . $affprofil[0]["name"] . "</p><img id='settings' src='img/parametres.png'>";
             } else {
-                echo '<p class=afficheName> Bonsoir ' . $affprofil[0]["name"] . "<img id='settings' src='img/parametres.png'></p>";
+                echo '<p class=afficheName> Bonsoir ' . $affprofil[0]["name"] . "</p><img id='settings' src='img/parametres.png'>";
             }
         }
         ?>

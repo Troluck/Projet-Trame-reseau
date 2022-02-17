@@ -55,11 +55,7 @@ header,
   font-size: 25px;
   padding-bottom: 8px;
 }
-.afficheName {
-  margin-right: 50px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
+
 
 #logo-img {
   height: 80px;
@@ -341,7 +337,11 @@ footer,
   cursor: pointer;
 }
 
-
+.afficheName {
+  margin-right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 /* RESPONSIVE FOOTER*/
 
