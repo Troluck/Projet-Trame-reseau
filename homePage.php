@@ -25,7 +25,7 @@
             <h2>Bienvenue sur<br>Smart Frames</h2>
             <h3>Le site qui permet de décoder votre réseau d'entreprise</h3>
         </div>
-        <img class="imghome" src="img/network.png">
+        <img class="imghome" src="img/network1.gif">
 
         <div class="button">
             <span id="connexion">Connexion</span>
