@@ -19,7 +19,7 @@ $(document).ready(function () {
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Protocol Name Usages',
+                    label: 'Noms des protocoles',
                     data: values,
                     backgroundColor: [
                         'rgba(50, 50, 220, 0.9)',

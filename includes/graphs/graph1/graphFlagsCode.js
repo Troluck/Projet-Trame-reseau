@@ -15,7 +15,7 @@ $(document).ready(function () {
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Flags Code Usage',
+                    label: 'Utilisation des Flags Codes',
                     data: values,
                     backgroundColor: [
                         'rgba(50, 50, 220, 0.9)',

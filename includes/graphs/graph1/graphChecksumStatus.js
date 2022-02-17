@@ -15,7 +15,7 @@ $(document).ready(function () {
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'Nom des protocoles ',
+                    label: 'Statuts des protocoles Checksums',
                     data: values,
                     backgroundColor: [
                         'rgba(50, 50, 220, 0.9)',

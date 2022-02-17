@@ -15,7 +15,7 @@ $(document).ready(function () {
             data: {
                 labels: keys,
                 datasets: [{
-                    label: 'IP From',
+                    label: 'Provenances des IPs',
                     data: values,
                     backgroundColor: [
                         'rgba(50, 50, 220, 0.9)',
