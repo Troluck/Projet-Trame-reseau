@@ -61,6 +61,7 @@ if (isset($_SESSION["id"])) {
             $graph = 'graphVide.js';
         }
     } else {
+        $choice1= 'based';
         $graph = 'graphVide.js';
     }
     if (isset($_POST['graph2selector'])) {
@@ -86,6 +87,7 @@ if (isset($_SESSION["id"])) {
             $graph2 = 'graphVide.js';
         }
     } else {
+        $choice2 = 'based';
         $graph2 = 'graphVide.js';
     }
     ?>
@@ -117,7 +119,7 @@ if (isset($_SESSION["id"])) {
                         <option value="flagsCode" <?php if ($choice1 == 'flagsCode') {
                                                         echo 'selected';
                                                     } ?>>Code de drapeau utilisés :</option>
-                        <option value="checksumStatus" <?php if ($choice1 == 'checksumStatus') {
+                            <option value="checksumStatus" <?php if ($choice1 == 'checksumStatus') {
                                                             echo 'selected';
                                                         } ?>>Status des protocole checksum :</option>
                         <option value="headerChecksum" <?php if ($choice1 == 'headerChecksum') {
