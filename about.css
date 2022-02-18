@@ -152,7 +152,7 @@ figure {
   cursor: pointer;
   margin: 0;
   opacity: 0.5;
-  backface-visibility: hidden;
+  backface-visibility: visible;
   transition: transform 450ms;
 }
 
