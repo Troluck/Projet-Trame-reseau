@@ -17,7 +17,7 @@ if (isset($_POST["Id1"])) {
         $password = $_POST['password'];
         $passwordverif = $_POST['password-verif'];
         $passwordhash = password_hash($password, PASSWORD_DEFAULT);
-    }
+    
 
     if ($password != $passwordverif) {
     ?>
@@ -34,7 +34,7 @@ if (isset($_POST["Id1"])) {
         $requestUtilisateur->execute();
         $users = $requestUtilisateur->fetch();
 
-        if ($users) {
+      }  if ($users) {
         ?>
             <script>
                 const modalErreur = document.querySelector("#modalErreur");
