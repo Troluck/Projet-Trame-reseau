@@ -12,13 +12,12 @@
 </head>
 
 <body>
-    <?php
-    session_start();
-    session_destroy(); ?>
+    <?php include("includes/header.php") ?>
+    <?php session_start() ?>
+    <?php session_destroy() ?>
     <?php include("modal/ModalErreur.php") ?>
     <?php include("modal/ModalConnexion.php") ?>
     <?php include("modal/ModalInscription.php") ?>
-    <?php include("includes/header.php") ?>
 
     <main>
         <div class="text">
